@@ -6,6 +6,7 @@ This repository contains the derived data and custom code needed to verify the a
 
 - `source_data/`: numeric source data for the main manuscript figures and selected supplementary figures.
 - `derived_label_tables/`: de-identified conversation-level and adjacent-turn analytic labels for the six main WildChat, LMSYS Chat and ShareChat task settings.
+- `validation/`: de-identified validation and audit outputs for human agreement and user-framing checks.
 - `statistical_outputs/`: bootstrap, confidence-interval, p-value, false-discovery-rate and regression outputs used in the manuscript and supplementary tables.
 - `tables/`: LaTeX table source files used in the manuscript and supplementary information.
 - `scripts/`: custom scripts for source-data export, de-identified label-table export, statistical summaries and figure generation.
@@ -26,6 +27,8 @@ The released derived label tables cover:
 | ShareChat | writing | 1,539 |
 
 The repository intentionally does not redistribute raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories or API keys. Conversation and turn identifiers in `derived_label_tables/` are one-way SHA-256 hashes generated only for joining analytic rows within this release.
+
+The validation files follow the same privacy boundary. User-framing case-level audit files exclude raw first-turn text and original conversation/source identifiers; they retain only de-identified case hashes, corpus/task strata, production labels, human-verified labels and non-identifying decision notes.
 
 Raw public corpora should be obtained from the original providers under their own licences and terms:
 

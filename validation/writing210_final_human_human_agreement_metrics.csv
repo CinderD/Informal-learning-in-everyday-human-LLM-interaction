@@ -1,0 +1,15 @@
+label_code,label_public,comparison,f1,mcc,gwet_ac1,kappa,accuracy,support,positive_reviewer_1,positive_reviewer_2,prevalence_reviewer_1,prevalence_reviewer_2
+active_user_engagement,Active user engagement,zixin_vs_haotian_final_human_labels,0.7317,0.6849,0.8114,0.6574,0.8778,90,25,16,0.2778,0.1778
+constructive_user_engagement,Constructive user engagement,zixin_vs_haotian_final_human_labels,0.8852,0.8267,0.8591,0.8264,0.9222,90,31,30,0.3444,0.3333
+passive_user_engagement,Passive user engagement,zixin_vs_haotian_final_human_labels,0.8000,0.8118,0.9883,0.7945,0.9889,90,3,2,0.0333,0.0222
+emotional_expression,Emotional expression,zixin_vs_haotian_final_human_labels,0.8000,0.7882,0.9752,0.7882,0.9778,90,5,5,0.0556,0.0556
+scaffolding,Scaffolding,zixin_vs_haotian_final_human_labels,0.9709,0.7964,0.9339,0.7945,0.9500,120,104,102,0.8667,0.8500
+support_intent_I1_metacognitive,Metacognitive support intent (I1),zixin_vs_haotian_final_human_labels,0.8261,0.7898,0.9034,0.7852,0.9333,120,25,21,0.2083,0.1750
+support_intent_I2_cognitive,Cognitive support intent (I2),zixin_vs_haotian_final_human_labels,0.9390,0.8101,0.8531,0.8077,0.9167,120,80,84,0.6667,0.7000
+support_intent_I3_affective,Affective support intent (I3),zixin_vs_haotian_final_human_labels,0.7273,0.6968,0.8573,0.6699,0.9000,120,27,17,0.2250,0.1417
+support_form_M1_feedback,Feedback support form (M1),zixin_vs_haotian_final_human_labels,0.8889,0.7985,0.8020,0.7980,0.9000,120,53,55,0.4417,0.4583
+support_form_M2_hinting,Hinting support form (M2),zixin_vs_haotian_final_human_labels,0.8200,0.7039,0.7081,0.6936,0.8500,120,45,55,0.3750,0.4583
+support_form_M3_instructing,Instructing support form (M3),zixin_vs_haotian_final_human_labels,0.7143,0.6651,0.8594,0.6552,0.9000,120,24,18,0.2000,0.1500
+support_form_M4_explaining,Explaining support form (M4),zixin_vs_haotian_final_human_labels,0.8393,0.6991,0.7013,0.6987,0.8500,120,55,57,0.4583,0.4750
+support_form_M5_modelling,Modelling support form (M5),zixin_vs_haotian_final_human_labels,0.9375,0.9148,0.9453,0.9148,0.9667,120,32,32,0.2667,0.2667
+support_form_M6_questioning,Questioning support form (M6),zixin_vs_haotian_final_human_labels,0.9630,0.9591,0.9896,0.9583,0.9917,120,14,13,0.1167,0.1083

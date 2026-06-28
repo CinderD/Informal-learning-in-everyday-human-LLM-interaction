@@ -1,0 +1,451 @@
+case_id_hash,sample_item_id,corpus,task,production_label,human_label,verdict,decision_basis
+c83f964be24909b64f87d4e6,framing_SC_coding_UNINTENTIONAL_072,ShareChat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+eadc760791e09662bc1b1dae,framing_SC_writing_INTENTIONAL_011,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+da4ad6b7daefbb5ae0fafe44,framing_WC_coding_INTENTIONAL_043,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cab358bbcba874851088e14e,framing_LMSYS_writing_INTENTIONAL_010,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3bd2f9526a56c0ccffda8c94,framing_LMSYS_writing_UNINTENTIONAL_066,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+260bb0c234a48b52ae193be3,framing_WC_coding_UNINTENTIONAL_056,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1bbbf46a69f35f156a8202cc,framing_SC_coding_INTENTIONAL_029,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6f77db6874d0ba897ed097c2,framing_WC_writing_UNINTENTIONAL_068,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+42dd7900acef8a4fea97be23,framing_LMSYS_coding_INTENTIONAL_036,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b61c801462d0eb689af96254,framing_WC_writing_INTENTIONAL_043,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d46d143d5a3d225a99ee9f7d,framing_WC_writing_INTENTIONAL_010,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a337be42e79ab68bc124626f,framing_WC_coding_INTENTIONAL_008,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ccf5dfb53619883a5e2ad000,framing_LMSYS_writing_UNINTENTIONAL_071,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3ba6d8e300b5e423a49d844d,framing_WC_writing_UNINTENTIONAL_062,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+094747585776c7bdd4b09fda,framing_LMSYS_coding_INTENTIONAL_013,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+82798f33b360aea13543c540,framing_WC_coding_INTENTIONAL_041,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+53dc98b567f84efe2f8049c4,framing_SC_coding_INTENTIONAL_041,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+54c8c9d075607e47dcd11344,framing_LMSYS_coding_UNINTENTIONAL_063,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+bf190c0e3eaa6f8bdd29d09c,framing_WC_coding_INTENTIONAL_010,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2aeb5036c75c27e2cc3ebe64,framing_LMSYS_writing_INTENTIONAL_014,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0d1058d36fabd017fcdea917,framing_WC_coding_UNINTENTIONAL_070,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+fed7a0a307c8e3a4baa62eec,framing_WC_writing_INTENTIONAL_033,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f0746ef3e270ebbf4cf0f7d8,framing_SC_writing_INTENTIONAL_008,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cc77c94fcb76534b5b5a5c27,framing_LMSYS_coding_INTENTIONAL_001,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6dc4179835e089dcef9cbfae,framing_SC_writing_UNINTENTIONAL_064,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2dc03090772dd4b45c8d3d45,framing_SC_coding_UNINTENTIONAL_071,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cb67c0a7768352c0b93666dc,framing_WC_coding_UNINTENTIONAL_068,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8311095d1a837c8463492860,framing_LMSYS_writing_INTENTIONAL_003,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d875ccf44e45c70947718c25,framing_SC_coding_UNINTENTIONAL_053,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7f074782efebc36a671bbd07,framing_SC_writing_UNINTENTIONAL_061,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+04f86d9aa6dc23191a581938,framing_WC_coding_UNINTENTIONAL_052,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+51e75ea1fdc2e5821c91f1cf,framing_WC_coding_INTENTIONAL_042,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2877a4e1b9dea0fd2cccc772,framing_SC_coding_INTENTIONAL_044,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+443e1e3a71899e63784b60e0,framing_LMSYS_coding_INTENTIONAL_016,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+794ed1237ca75e6bf5d253da,framing_LMSYS_writing_UNINTENTIONAL_064,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f66b80a0c33f2f6934701ac8,framing_WC_coding_INTENTIONAL_012,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cb4225f2055e9d985ac25bc5,framing_LMSYS_writing_INTENTIONAL_049,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d4199f258a6d3c6df496b0ca,framing_SC_coding_INTENTIONAL_046,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+874803cfd2072f9e07839c39,framing_WC_coding_UNINTENTIONAL_058,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5aaf22d9320d1912f0ae08a0,framing_SC_coding_INTENTIONAL_040,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e9e3f0988ee8b7806b04ffa5,framing_LMSYS_coding_INTENTIONAL_043,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6915cc53e39640853c589f4b,framing_SC_writing_UNINTENTIONAL_062,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+561efc20e67ff6660484b473,framing_LMSYS_coding_UNINTENTIONAL_067,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+702ce2c00772257c8fd8d1d5,framing_LMSYS_coding_INTENTIONAL_010,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+0a69d590b45fb9ce8f27a4a4,framing_WC_writing_UNINTENTIONAL_072,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4b72488f0e65fb1ee36c6218,framing_WC_writing_INTENTIONAL_014,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+9ed184cf9ccee1d1aebc620d,framing_WC_writing_INTENTIONAL_019,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1d99b87abbed3ff26002e6ee,framing_WC_coding_INTENTIONAL_023,WildChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+86ca0f65815df68bc99591e1,framing_WC_coding_UNINTENTIONAL_057,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d620aa6cc6886cefaefd075d,framing_LMSYS_coding_INTENTIONAL_038,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d34ffdaecc38f61a98725bb3,framing_WC_coding_INTENTIONAL_050,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a1163c0771131a9d64f860dd,framing_SC_coding_UNINTENTIONAL_062,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+011f04fa055caccb810421e9,framing_SC_coding_INTENTIONAL_002,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b96471628ded9a26d0a369e4,framing_WC_coding_UNINTENTIONAL_065,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c173577f50f6bd1cf39421a2,framing_LMSYS_coding_INTENTIONAL_021,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2a06558be41605bdd7d2d75e,framing_LMSYS_coding_UNINTENTIONAL_053,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+63f8f074d57d67651935b212,framing_SC_coding_INTENTIONAL_013,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+979d1f5e2c04b069650aba31,framing_WC_writing_INTENTIONAL_012,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+404dd4da3cd993f6644bd952,framing_SC_writing_INTENTIONAL_031,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a3bc55bf7573c82b964c5b47,framing_LMSYS_coding_INTENTIONAL_040,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+abadf500a927686eeba157c5,framing_WC_writing_UNINTENTIONAL_059,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+19e074b25e305db2b66ec6cc,framing_LMSYS_coding_INTENTIONAL_033,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+caddbd0230a2e2d4582e4411,framing_WC_writing_INTENTIONAL_034,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d54995a1b885b7a95607214f,framing_LMSYS_coding_INTENTIONAL_031,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c9e198af14133808a9462e49,framing_SC_coding_UNINTENTIONAL_063,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1822b32a4f26d07cb2d582ba,framing_LMSYS_writing_UNINTENTIONAL_057,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ddba696bde3a9571c6c6b2c2,framing_LMSYS_writing_INTENTIONAL_028,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+e80d37d8c94e8fbf56caf010,framing_LMSYS_writing_INTENTIONAL_025,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f60a1602b3ba09c5f6f6c0b9,framing_LMSYS_writing_UNINTENTIONAL_053,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cf38115013a659608a0f92e9,framing_WC_writing_INTENTIONAL_025,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+9f77abd5dd4b7855263d7ead,framing_SC_writing_INTENTIONAL_034,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a2ae1dcd46f1c2662a4c4b42,framing_WC_coding_UNINTENTIONAL_059,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+51b62fe09c1d28a7c0faf8c0,framing_WC_writing_INTENTIONAL_047,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+94e6b572081ede4984650189,framing_WC_writing_INTENTIONAL_011,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+68bf037ff388e0bdc49dab4d,framing_SC_writing_UNINTENTIONAL_069,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+dcc2dc021871fd93677ef8c7,framing_WC_writing_UNINTENTIONAL_063,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+41f0a1f49553dd612fc25e28,framing_WC_coding_UNINTENTIONAL_064,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8eae24898d028592821aea61,framing_WC_writing_INTENTIONAL_037,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0dafbe05f4c8d143f20b9313,framing_LMSYS_writing_UNINTENTIONAL_054,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+926df8fac45877638104dd1d,framing_WC_writing_UNINTENTIONAL_052,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+747aa7decc17c4f098a8394f,framing_LMSYS_writing_INTENTIONAL_002,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b1c69989b9a2d95169d24647,framing_LMSYS_coding_INTENTIONAL_020,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+5dc1046e660d89506bef6f91,framing_WC_coding_UNINTENTIONAL_074,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+55a335d198ade5f1ba134a40,framing_SC_writing_INTENTIONAL_005,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7bc8502ec58c9286382ee064,framing_SC_writing_UNINTENTIONAL_055,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ed2c1f09ea5eadb19a1b6a76,framing_WC_coding_INTENTIONAL_021,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+50443d090bcdcc0d05032403,framing_WC_coding_INTENTIONAL_017,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2ce1ab60168fd35b31e5fb6c,framing_WC_writing_UNINTENTIONAL_066,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2e4f53f5f07fa92b8ddcb8d0,framing_SC_coding_INTENTIONAL_023,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+09bfa2e2dd65260f25b1d578,framing_LMSYS_writing_INTENTIONAL_038,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f57e4ed5c8b1f5b7282fce1e,framing_WC_writing_INTENTIONAL_022,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+831f03320ecb0b09ff9b2d1e,framing_LMSYS_writing_INTENTIONAL_007,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+98ca25c24e0f500d1f4c22d9,framing_LMSYS_coding_UNINTENTIONAL_054,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c4b880935a258287d4b631a2,framing_WC_coding_UNINTENTIONAL_051,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9429c2d3407b3b564324e587,framing_LMSYS_writing_UNINTENTIONAL_068,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6a9aa8ff9bec3bfa7230a3df,framing_WC_writing_UNINTENTIONAL_074,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+be9a8dc9f3feb3921da91419,framing_SC_writing_INTENTIONAL_041,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e28a99459c870032d6f62ddd,framing_LMSYS_writing_UNINTENTIONAL_062,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+765816c4f7261912d3d29641,framing_WC_writing_INTENTIONAL_018,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0c9d7017a0fd48d1e4b0e715,framing_WC_coding_INTENTIONAL_003,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d3ca365b1fb9508477f303e9,framing_WC_writing_INTENTIONAL_044,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c1f6dc6f4001d75067ebe228,framing_WC_writing_INTENTIONAL_024,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+eb2cddff4d3530de834501c0,framing_WC_writing_INTENTIONAL_050,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+1de9b1a8424c29bac8eae90c,framing_WC_writing_UNINTENTIONAL_067,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+50618312f7eb5ff7436ce512,framing_WC_writing_INTENTIONAL_003,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+8abb90f3fca7772a8984a5ee,framing_LMSYS_writing_INTENTIONAL_050,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+eca2393d3c16f8f5278538e3,framing_WC_coding_INTENTIONAL_004,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f197599377a9ac81fde5de0e,framing_WC_coding_UNINTENTIONAL_061,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0520a1323e443ef9444aaf14,framing_SC_coding_UNINTENTIONAL_066,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7a4666a468e71c99012030ab,framing_LMSYS_coding_INTENTIONAL_032,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+90bbf71f5e932556e9170d7d,framing_LMSYS_coding_INTENTIONAL_014,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f54b8095482be1235ffe04b8,framing_SC_coding_INTENTIONAL_047,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9943567d4fef041e6b6e6f84,framing_SC_writing_INTENTIONAL_003,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+089c9f36b47465f3d2c267bc,framing_LMSYS_coding_UNINTENTIONAL_068,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0d85f3e6538324cd10825587,framing_WC_writing_INTENTIONAL_028,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c4bfeb50fb6ca62d0433a52a,framing_SC_writing_INTENTIONAL_033,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ef9e18344f8414b388587bd3,framing_SC_writing_INTENTIONAL_047,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c9bc9cf0ce14fa9ee38feebd,framing_LMSYS_coding_INTENTIONAL_050,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e60282c74b770cb3130797d4,framing_LMSYS_writing_UNINTENTIONAL_070,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5be664fe7fe1eeb79ec3d1c2,framing_LMSYS_writing_UNINTENTIONAL_073,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+aff61c6f2f45f1508ca70391,framing_LMSYS_writing_UNINTENTIONAL_055,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c17caca9acf5e889a87b2ea6,framing_SC_writing_UNINTENTIONAL_057,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6b98e50cff482e4595504591,framing_WC_writing_INTENTIONAL_026,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+7568ce0019f322d2c451319d,framing_SC_writing_UNINTENTIONAL_056,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c2a933a2f9017614b94bc644,framing_LMSYS_writing_INTENTIONAL_015,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+284a24de7be919a331e72dca,framing_SC_coding_INTENTIONAL_001,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f7a4e98b481e3ce5f732e1a2,framing_WC_coding_INTENTIONAL_002,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+08c9377238085e4fd69f67b5,framing_LMSYS_writing_INTENTIONAL_006,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f66195ab7b16c7aad0f9eb7d,framing_SC_writing_INTENTIONAL_004,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c6f8d7af93bb6eaabf8ff20f,framing_SC_coding_INTENTIONAL_022,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3f98a826dd6abc31945e29f0,framing_SC_coding_UNINTENTIONAL_075,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e91e27ddb482b6a865f1d05d,framing_LMSYS_coding_INTENTIONAL_018,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6fd848d6190de660b247490f,framing_LMSYS_writing_UNINTENTIONAL_061,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c8b43e02e0b93b370f30a1b0,framing_LMSYS_writing_UNINTENTIONAL_074,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+caca2837cb82d0601527a922,framing_LMSYS_writing_INTENTIONAL_022,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d02c72f215f1bae4413b5e0c,framing_WC_coding_INTENTIONAL_037,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+abb2b2556644c1dbcee26d0c,framing_LMSYS_coding_INTENTIONAL_019,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+769d96ceb0744e5666ca0a16,framing_WC_coding_UNINTENTIONAL_066,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1167bbcf7083a694b59441c5,framing_WC_coding_INTENTIONAL_009,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9c28fdcd09dea8f9b2f0ac13,framing_WC_coding_INTENTIONAL_026,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3255ca782ea7205e1779f1af,framing_LMSYS_writing_INTENTIONAL_037,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2c5af3ce30ff1141a07fb1e4,framing_WC_writing_UNINTENTIONAL_064,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9040d096230b2d800eb82fe5,framing_SC_writing_INTENTIONAL_030,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6d866e1db4712c80cdc3da0b,framing_LMSYS_coding_INTENTIONAL_045,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5984c0b8def0949e1a7833f9,framing_WC_writing_UNINTENTIONAL_075,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+59592578b1e968b7e83e41d1,framing_LMSYS_coding_UNINTENTIONAL_064,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d13ffbcfb0fd5599e23f2bef,framing_WC_writing_UNINTENTIONAL_073,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9119f944a7d1703f5aff7b25,framing_LMSYS_writing_INTENTIONAL_035,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b2a110abde46fb94ac1800f1,framing_SC_coding_INTENTIONAL_018,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+98ffc3ea9c258acc220917e2,framing_LMSYS_writing_UNINTENTIONAL_067,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3a6060406d3596681e3567a3,framing_SC_coding_UNINTENTIONAL_065,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+78a87b31eca7b7fa0d5a4c73,framing_SC_coding_UNINTENTIONAL_061,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3a3ddd0402aba75de8a5b461,framing_SC_coding_UNINTENTIONAL_067,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5cb1bece0c66d792010b1fb0,framing_WC_coding_INTENTIONAL_001,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+25e77615cfea0b7e13c36f1b,framing_LMSYS_coding_INTENTIONAL_003,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8d6c8112acf3cd28e343f89e,framing_SC_writing_INTENTIONAL_037,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+536043c23e5cbda8e2a44804,framing_LMSYS_writing_INTENTIONAL_012,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+05b350851204a6c5b35c41e0,framing_SC_writing_UNINTENTIONAL_065,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d1d9490989aded8797dca7da,framing_WC_coding_INTENTIONAL_013,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+54497efea9030ef1eac76ee5,framing_LMSYS_coding_INTENTIONAL_047,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+69944a6266adf6164f32b982,framing_LMSYS_writing_UNINTENTIONAL_069,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8c4251565d6c620766f3f322,framing_LMSYS_coding_UNINTENTIONAL_052,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+37fecdf3d295ceb8f7273a76,framing_WC_coding_UNINTENTIONAL_054,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+95d7c45f700ee0cca5509946,framing_WC_coding_INTENTIONAL_030,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+60d839edcf380c766ba7ce54,framing_SC_writing_UNINTENTIONAL_053,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c02f424c26ebd62683c01ae9,framing_SC_coding_UNINTENTIONAL_059,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f30df643649941893af8f031,framing_SC_writing_INTENTIONAL_039,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1203a2bb8ccf6af405454134,framing_SC_coding_UNINTENTIONAL_056,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+08614b259175d6766c4915e6,framing_SC_coding_INTENTIONAL_015,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8a0f713a3c8586946cbb4fe9,framing_SC_coding_INTENTIONAL_045,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+253e3c932e97cb3687e195dc,framing_SC_writing_INTENTIONAL_035,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f23e24fd370445704eee935b,framing_SC_coding_INTENTIONAL_024,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d4df60861abb8d669fa1d194,framing_WC_coding_INTENTIONAL_034,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+96be5509287a460b7fc1f96b,framing_LMSYS_writing_UNINTENTIONAL_072,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6ebde0927e4ef88b0cee59d2,framing_WC_coding_UNINTENTIONAL_072,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+eb24849c4dedeb8a346ad007,framing_LMSYS_coding_INTENTIONAL_037,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+3ab1f8aa8d8313d829f96b43,framing_SC_coding_INTENTIONAL_007,ShareChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+504cea8b8eb4195cd3b833d6,framing_WC_writing_INTENTIONAL_046,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f3683653b64f1d6780c31b0d,framing_LMSYS_writing_UNINTENTIONAL_058,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4e1185d984e4d99edba2eff3,framing_LMSYS_writing_UNINTENTIONAL_059,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d2802472ac0ebb996ac9cf8f,framing_SC_coding_INTENTIONAL_011,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+962708bfe0efa72863680029,framing_SC_writing_UNINTENTIONAL_052,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+070c349ad388fcf80a1b58e1,framing_LMSYS_writing_INTENTIONAL_032,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+767a8b15d24e89530a2f80aa,framing_LMSYS_coding_UNINTENTIONAL_071,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6cf277d4cc33474b2d0dc7cc,framing_LMSYS_coding_UNINTENTIONAL_057,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+048bdb404390cd3c5c88d94c,framing_SC_coding_INTENTIONAL_019,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+fe4c99876d80f5bebf4ca4cc,framing_SC_writing_INTENTIONAL_042,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d52a3e62f04b1cad245d02f3,framing_SC_writing_INTENTIONAL_043,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f78b68d686ceaa0bf9606916,framing_WC_writing_INTENTIONAL_015,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+79a141afc4cd3a4058b63c1b,framing_SC_coding_UNINTENTIONAL_055,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+81b72b9c11dc288fc735a9f5,framing_WC_coding_INTENTIONAL_032,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1abf7af4318404d94d134b13,framing_SC_writing_UNINTENTIONAL_072,ShareChat,writing,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+d452920fd46bf613f128a41b,framing_WC_coding_UNINTENTIONAL_073,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8a3ed0faca1c7bd7067aa62e,framing_SC_writing_INTENTIONAL_015,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+69e9c61eed3dd0f56050340d,framing_SC_writing_INTENTIONAL_023,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c5137a47d81dfabe0739cfd8,framing_LMSYS_coding_INTENTIONAL_035,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+06a4b3500b9b1fba87b03503,framing_LMSYS_coding_UNINTENTIONAL_060,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+67736aa83f553fb62d3d340f,framing_SC_writing_INTENTIONAL_040,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ee3f3025a68bf856ffc474ee,framing_LMSYS_writing_UNINTENTIONAL_063,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9828a78a4f9f3b28b4b3658f,framing_WC_writing_UNINTENTIONAL_055,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e0da3be50fc70c988129d3c0,framing_LMSYS_coding_UNINTENTIONAL_073,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3dd6f437bf82d65c57d90dd7,framing_LMSYS_coding_UNINTENTIONAL_075,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d0475968bb9f502248ef2d0f,framing_WC_coding_INTENTIONAL_039,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2b5b48d34b586e34ece25112,framing_LMSYS_writing_INTENTIONAL_048,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d14ac2c94e972523d257da7a,framing_LMSYS_writing_INTENTIONAL_036,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d0fea539abeab42e15ebee65,framing_WC_coding_INTENTIONAL_024,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+18ae0eb508eab56cae445a9f,framing_WC_writing_INTENTIONAL_041,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+36ce3acbc93c5b75d2aae6ec,framing_SC_writing_INTENTIONAL_002,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ae28a207418aa34e044c8a8c,framing_WC_coding_INTENTIONAL_033,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b2ff4582e1df91914846dfd3,framing_SC_coding_INTENTIONAL_037,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ad6be1d9ae4ebc729a387aab,framing_WC_writing_INTENTIONAL_004,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+8cea70a3fe5563bbcf1b58b4,framing_SC_coding_INTENTIONAL_006,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+017e3de06ec57824aee1acdf,framing_LMSYS_coding_INTENTIONAL_007,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f1c7c0ea02fb014da5e4a445,framing_LMSYS_coding_INTENTIONAL_025,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+ea9384aea9c544320eefff54,framing_WC_writing_INTENTIONAL_040,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+de0d91a79313dceef86fe15c,framing_WC_writing_INTENTIONAL_030,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e65a686acea475ae104821c4,framing_LMSYS_writing_INTENTIONAL_046,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5ca21a756e047247b968b087,framing_SC_writing_INTENTIONAL_046,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e61eee354f546596d68ffc34,framing_WC_writing_UNINTENTIONAL_061,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+fa8e850d947f5995d84b5093,framing_SC_writing_INTENTIONAL_044,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5c7173271e4f25c361c1e7bf,framing_WC_writing_INTENTIONAL_020,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+95a7b85a375c7fb22b884089,framing_WC_writing_INTENTIONAL_001,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+eaac854d004b553b92068e98,framing_WC_writing_UNINTENTIONAL_057,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f51f7cc47d674a881ecf5bf6,framing_LMSYS_coding_UNINTENTIONAL_055,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+60254966228bd33febc88a79,framing_SC_coding_INTENTIONAL_008,ShareChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+b8b20fdb09f177abfe162034,framing_SC_writing_INTENTIONAL_029,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+76d6640d0dfee5df57b60723,framing_WC_writing_INTENTIONAL_008,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+e4dfdb4ab7d724f731a18e01,framing_SC_coding_INTENTIONAL_048,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ab0996fb28cb8e3e10c94818,framing_WC_writing_INTENTIONAL_048,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+35c44917b474ab803d9b0191,framing_WC_coding_INTENTIONAL_048,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+bb97fd77c3053284a6b5faa9,framing_LMSYS_writing_INTENTIONAL_042,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ca5eacb58b29135a58980b5f,framing_LMSYS_writing_INTENTIONAL_044,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+12e0f2bee2088a6825b45c94,framing_SC_writing_UNINTENTIONAL_071,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+26595274a93d1db96a3e5b66,framing_LMSYS_coding_INTENTIONAL_041,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+e62cac00c2ccbd567e8b1901,framing_WC_coding_INTENTIONAL_035,WildChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+32b54c5fb7d192142de30bce,framing_LMSYS_writing_UNINTENTIONAL_075,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1690c82dce9c94a6ee5139d5,framing_LMSYS_writing_INTENTIONAL_011,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+1bba19d3a94ce7d102f86c32,framing_SC_writing_INTENTIONAL_024,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9328245aced98166c5936e41,framing_SC_writing_INTENTIONAL_022,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d8c150ab52bd2f8e6f776a71,framing_WC_writing_INTENTIONAL_038,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d69a501e35e1577e57cc39fb,framing_LMSYS_writing_INTENTIONAL_027,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+435b7f01b4f44f7501da71d2,framing_LMSYS_writing_INTENTIONAL_039,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a75102c00822c418e04c74ff,framing_LMSYS_writing_UNINTENTIONAL_051,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d5442cc89e20c168c5fa7325,framing_SC_writing_INTENTIONAL_016,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f74f185f204739fb26c31de8,framing_SC_coding_INTENTIONAL_043,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4d50fa3dae616dc1e20f4bf4,framing_WC_coding_INTENTIONAL_019,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+21569769f4bfffd9a06025d7,framing_SC_coding_UNINTENTIONAL_051,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6ac606af1d0d37256a5baa5b,framing_SC_coding_INTENTIONAL_042,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+bb20b5f0e84537396f2be77a,framing_WC_writing_INTENTIONAL_016,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+59e6defbfce16f6bef87a4ec,framing_LMSYS_coding_INTENTIONAL_009,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+067fbb5bf200b843405209c4,framing_WC_coding_INTENTIONAL_014,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+708be75d5db62466a8108943,framing_WC_writing_INTENTIONAL_021,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d71cdb010a7f3952209c1c18,framing_SC_writing_INTENTIONAL_018,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9e72cc4d6396420b4f46b664,framing_SC_writing_INTENTIONAL_036,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+344640c0efcd52cd6e2272b2,framing_LMSYS_coding_UNINTENTIONAL_059,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b932d55fa746637eb681a775,framing_LMSYS_writing_INTENTIONAL_013,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1eb967e0baa6f62c3f8dec95,framing_WC_coding_UNINTENTIONAL_063,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+fdbf8e50ecd02bd7ba31b7ac,framing_WC_coding_INTENTIONAL_022,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f2b7e718dac962b3b26ee781,framing_LMSYS_coding_INTENTIONAL_046,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ed6c349191a0cca7c568a1ab,framing_WC_writing_UNINTENTIONAL_051,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+055b3773483a4a743dbe31e7,framing_SC_writing_INTENTIONAL_028,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+81927b4199ee1db7760ac920,framing_SC_coding_INTENTIONAL_030,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3e512d97bc4abf679d005fdd,framing_LMSYS_coding_UNINTENTIONAL_066,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ad90f4ae2821003bb330e8ce,framing_LMSYS_coding_UNINTENTIONAL_074,LMSYS Chat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+5e63db3e9f6bd576371998f1,framing_LMSYS_coding_INTENTIONAL_029,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1f6dbde6d890d630d40085b7,framing_SC_coding_INTENTIONAL_014,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+77dbe5be3bd955089722521a,framing_WC_writing_INTENTIONAL_031,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+031738ff517efd1066b5b969,framing_WC_writing_INTENTIONAL_035,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+65ad832ad8ca61c8435c12ec,framing_SC_coding_UNINTENTIONAL_073,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b22ae7e53b88f35defe056b4,framing_LMSYS_writing_UNINTENTIONAL_060,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6798511cd64b6106551763bd,framing_SC_writing_INTENTIONAL_048,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+53679af2791ebfb9c147e32b,framing_WC_coding_INTENTIONAL_006,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+deb243a27cc990223d513cb1,framing_LMSYS_writing_UNINTENTIONAL_056,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+64a5bb4650fa382043df4495,framing_LMSYS_writing_UNINTENTIONAL_052,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b40bfdbfdaf2206d0fed4a81,framing_LMSYS_coding_INTENTIONAL_012,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+161d19b8f9d695a21cb412bf,framing_WC_coding_INTENTIONAL_036,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cae787a9ea0ec6579449cfd1,framing_LMSYS_coding_UNINTENTIONAL_056,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+831ebafe7c4ceaf2b93ce54b,framing_LMSYS_coding_UNINTENTIONAL_062,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+251fef1d8138f8d4ab36234f,framing_SC_coding_UNINTENTIONAL_054,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+01e57255881e1316f1a28206,framing_LMSYS_writing_UNINTENTIONAL_065,LMSYS Chat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0aa21da4a3248b41f1d314c3,framing_WC_writing_UNINTENTIONAL_069,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6ff71d04f9de6800497e893a,framing_LMSYS_coding_UNINTENTIONAL_070,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ceec86e9d966d0dfaed71da3,framing_WC_coding_INTENTIONAL_007,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c599242eb39e50e031280206,framing_LMSYS_writing_INTENTIONAL_008,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b54bd178a9f8b13b04d4d0ff,framing_SC_writing_INTENTIONAL_010,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f5389701139eb03fda54dbdd,framing_SC_coding_INTENTIONAL_034,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+aa09ce590787d83edf5052c1,framing_SC_writing_INTENTIONAL_021,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+bed98234e48a8d331ce97285,framing_SC_writing_INTENTIONAL_045,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+db32edf22eae009dbe7eb8d3,framing_SC_writing_INTENTIONAL_013,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+93234b4445aefcbaef4716e7,framing_LMSYS_writing_INTENTIONAL_009,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d421eb73bbdb52d0cc198e1a,framing_LMSYS_writing_INTENTIONAL_004,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d44e2e794c459e8429eb17a7,framing_SC_coding_INTENTIONAL_009,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5b8883fcfd39b4071a369fa5,framing_SC_writing_INTENTIONAL_038,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5969ed5679e9a96786fa284e,framing_LMSYS_coding_UNINTENTIONAL_051,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c4e208169754c89365c80930,framing_LMSYS_writing_INTENTIONAL_023,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+2444105ed3708f555ddb9cef,framing_WC_writing_INTENTIONAL_049,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+39437f72451435051878f1dc,framing_LMSYS_writing_INTENTIONAL_047,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+662f6055d1976fe79d0fa83e,framing_SC_coding_INTENTIONAL_004,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7c3e2acc69ed867eb4158d1f,framing_SC_coding_INTENTIONAL_020,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c5a279565b1ddbc800219bed,framing_LMSYS_coding_INTENTIONAL_005,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+02afce4d7d876b8130d48808,framing_SC_writing_INTENTIONAL_006,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4036dcd97575df77991e54a5,framing_SC_coding_INTENTIONAL_050,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+da6071035504522f45581176,framing_LMSYS_coding_INTENTIONAL_004,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cfa532db3f880ff07cf2c098,framing_WC_writing_UNINTENTIONAL_071,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+accc80133cc36f3900011963,framing_LMSYS_coding_INTENTIONAL_017,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+b951bb703ebfdd0d63e9a763,framing_SC_writing_UNINTENTIONAL_075,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ee3e221f2069237d8e071938,framing_SC_coding_INTENTIONAL_026,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+60771265e171765059b471ab,framing_SC_writing_INTENTIONAL_026,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6c18e678d208e584c38ef135,framing_WC_writing_INTENTIONAL_027,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+422749b9d2fa80daa31ac981,framing_LMSYS_coding_INTENTIONAL_022,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7e9f4fbd715f96db7921ea34,framing_LMSYS_writing_INTENTIONAL_024,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ae0ee3613a2a6816d244399c,framing_WC_writing_INTENTIONAL_032,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cb5819c4ac7ecb06f2b90dc3,framing_SC_coding_INTENTIONAL_035,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+568b1e2f39788d5342192221,framing_WC_coding_INTENTIONAL_046,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7df153ff5a56f46bb62839f0,framing_WC_coding_INTENTIONAL_038,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0d3ee147ac513c7206076909,framing_SC_coding_UNINTENTIONAL_070,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f0bc7103f59d36d2f44e9e8d,framing_LMSYS_writing_INTENTIONAL_017,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5136f5c587af3a629f4ccf4d,framing_SC_writing_INTENTIONAL_017,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7a1076be4e16678e8c59609a,framing_WC_coding_INTENTIONAL_031,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6d66527930d79d2f5c63d33c,framing_SC_writing_UNINTENTIONAL_058,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9b2021c52b67f882e1d5aa24,framing_LMSYS_coding_INTENTIONAL_028,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+9e5efb88f13534114c3e55be,framing_WC_coding_INTENTIONAL_047,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a8e861d694b7496b6c8e1afb,framing_LMSYS_coding_INTENTIONAL_044,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+95bcfc445c184e5bc7708f90,framing_WC_coding_INTENTIONAL_028,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1baa72539a2015819a38c8c6,framing_LMSYS_coding_INTENTIONAL_049,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+71483b67a9674e5ab9c83f74,framing_WC_writing_INTENTIONAL_007,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6e7a37f376b545ae331ca0aa,framing_LMSYS_coding_INTENTIONAL_027,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8443a8406ed97462513804ba,framing_LMSYS_writing_INTENTIONAL_020,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1db37c49668dc7d7f71d8d71,framing_SC_coding_UNINTENTIONAL_052,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+da621936c76e11d7fa49d060,framing_SC_coding_INTENTIONAL_049,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7b1c5017b4023cc6c56a6da5,framing_WC_writing_UNINTENTIONAL_058,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e5f45740acace37fe6cf8e06,framing_LMSYS_writing_INTENTIONAL_001,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+b3a8ddf129af1ed24988a4ea,framing_SC_writing_INTENTIONAL_032,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+dab7338223c7a3bf6ffb5cd4,framing_WC_writing_INTENTIONAL_013,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+ba7a3fd12cc9fe011d35e199,framing_LMSYS_writing_INTENTIONAL_045,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+be6aa978d8100162f88b59df,framing_WC_writing_INTENTIONAL_045,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c39542c5fe9f5abdf201e8aa,framing_WC_writing_UNINTENTIONAL_060,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+743e8b8fb6f4ed1111176581,framing_SC_coding_INTENTIONAL_016,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+886dcde23af29d096b9f88f9,framing_SC_writing_UNINTENTIONAL_060,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a828036ca8f819bfacfd6f6e,framing_LMSYS_writing_INTENTIONAL_030,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+5f5ed15035acc790ce42ee36,framing_SC_coding_INTENTIONAL_036,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e1197e822feaf711a102c97b,framing_LMSYS_writing_INTENTIONAL_029,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+754283aabda97376075727b1,framing_SC_writing_UNINTENTIONAL_051,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7e699e80aac2bc0ecb5ea205,framing_LMSYS_coding_INTENTIONAL_023,LMSYS Chat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+d8fa803531793af31f2a90bd,framing_SC_writing_INTENTIONAL_001,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+827199a0945dcd67928ccbf4,framing_SC_coding_UNINTENTIONAL_057,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0abdedb8d88ff7349a63124c,framing_SC_coding_INTENTIONAL_032,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e729508fa81943225779ce88,framing_LMSYS_writing_INTENTIONAL_021,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+f125a01b7d70276721521376,framing_SC_writing_UNINTENTIONAL_068,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a78bbb665bf0115d65877844,framing_SC_coding_UNINTENTIONAL_060,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a9f6ba303482c3e13ca3eb70,framing_SC_coding_INTENTIONAL_017,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6e347b1e37e8319692987701,framing_LMSYS_coding_INTENTIONAL_008,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ad78f9118c551415af1e2dbf,framing_SC_writing_UNINTENTIONAL_073,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+165c02575126cde7f24af61e,framing_SC_writing_UNINTENTIONAL_074,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+04a2601404f313b3e58451bc,framing_WC_coding_UNINTENTIONAL_060,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3fcf16d9833824a8def12f91,framing_WC_writing_INTENTIONAL_029,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7db7257c93ed340ba8d581fb,framing_SC_writing_INTENTIONAL_050,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+56866f175b6513bb64e08b2b,framing_WC_coding_INTENTIONAL_049,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0220d22b5066a39acb69643f,framing_LMSYS_coding_INTENTIONAL_039,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+65e4fcd4c51601a37ad9bd87,framing_SC_writing_UNINTENTIONAL_059,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+69190fc21f8f9c583918c7c1,framing_WC_coding_INTENTIONAL_005,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1fb5e11ea5b6f88a924d93a1,framing_SC_coding_INTENTIONAL_003,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1417a48ee5b282fe982c6700,framing_LMSYS_writing_INTENTIONAL_018,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+e3d40484546d11afd21118e4,framing_SC_coding_UNINTENTIONAL_068,ShareChat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+de78dad1bc1bc0676dc85e4e,framing_SC_writing_INTENTIONAL_007,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8a6631a2efc24ebaae8eea18,framing_WC_writing_INTENTIONAL_042,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+19b3a9517fac75bf37b1cd98,framing_LMSYS_writing_INTENTIONAL_041,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+732258f4b585e6a893a41e90,framing_SC_writing_INTENTIONAL_027,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c010ffc4fb781ceb94605b01,framing_SC_writing_INTENTIONAL_014,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7feb64a66e485efb12e1bdff,framing_SC_writing_UNINTENTIONAL_066,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ab48ed2972c12dcc4cb5adb7,framing_LMSYS_writing_INTENTIONAL_019,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8db5190c4c89f7901f66a3b0,framing_SC_writing_INTENTIONAL_019,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+df358b466a3b1dfd41245d09,framing_WC_writing_UNINTENTIONAL_054,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+12db071426c7da52c65885c9,framing_WC_coding_INTENTIONAL_020,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+fe0ecf2839352562858bac37,framing_WC_coding_INTENTIONAL_016,WildChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+37ab2676f537cc305f58a2c5,framing_WC_writing_INTENTIONAL_017,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4b0ea5785af48e5edc6b8f67,framing_WC_coding_INTENTIONAL_011,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+578f840a1c989ee9abec87be,framing_WC_writing_INTENTIONAL_006,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+89bbac56b878f61e3fbb684a,framing_SC_coding_INTENTIONAL_021,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4b8d7f8ec0a63815af941667,framing_WC_writing_INTENTIONAL_005,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e287667bd96c3588e41f9eca,framing_WC_coding_INTENTIONAL_029,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9455fe36c16a8be61b5a2eb9,framing_SC_coding_INTENTIONAL_038,ShareChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+2b62807ad54699155f67bf25,framing_WC_coding_INTENTIONAL_044,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+03a76215f06ccc5ced6e1b3e,framing_SC_coding_INTENTIONAL_025,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0d5250b44806139044ac9c6f,framing_WC_coding_INTENTIONAL_027,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8c8bfe333969518a8c0a3841,framing_WC_coding_UNINTENTIONAL_071,WildChat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+35af34a98c72af6dd3f5a5b0,framing_SC_writing_INTENTIONAL_012,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+0babc59d5976788964c82ce7,framing_LMSYS_coding_INTENTIONAL_002,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+4f5a6fb4867d2b17bb83d931,framing_LMSYS_coding_UNINTENTIONAL_058,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+493f1cc468dd01d92fa292c2,framing_SC_coding_INTENTIONAL_005,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9bfd907cff320915343edb13,framing_LMSYS_coding_UNINTENTIONAL_072,LMSYS Chat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+5137441e56e3c6831f4595dd,framing_WC_writing_INTENTIONAL_023,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+fa8bc36e196244d1966cf695,framing_LMSYS_writing_INTENTIONAL_016,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+0d4fe3192bb27a8952c0de2a,framing_SC_coding_INTENTIONAL_012,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ae8f15d45f5aebebf41dc016,framing_LMSYS_coding_UNINTENTIONAL_065,LMSYS Chat,coding,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+42f3eb5d472fe1c3db84c473,framing_LMSYS_writing_INTENTIONAL_031,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8a303015b44848b3c4fbc397,framing_SC_coding_UNINTENTIONAL_058,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c2bd04cc74890c30c6547daf,framing_LMSYS_coding_INTENTIONAL_026,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+affc932c8ce24e0f84de2eaa,framing_LMSYS_coding_INTENTIONAL_042,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+7f91d2082379d23d7c9c385b,framing_SC_writing_UNINTENTIONAL_054,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f421281c1a2c97d82295b9ef,framing_SC_coding_UNINTENTIONAL_074,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+cbebebe1b42489375db88106,framing_WC_writing_INTENTIONAL_039,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f27cd59bba027467330260ad,framing_WC_writing_UNINTENTIONAL_065,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c4bd01d3e6bd2afa1e453cca,framing_WC_writing_INTENTIONAL_002,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ef8a52b9a9e8aedcdb32a1e5,framing_SC_writing_INTENTIONAL_025,ShareChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+4f6b73a2e1e05f853c3be086,framing_LMSYS_writing_INTENTIONAL_033,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+3909f29b22ac837aae82a2ce,framing_LMSYS_coding_INTENTIONAL_024,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+c0be971dd5796b7cfdb3f7eb,framing_SC_writing_INTENTIONAL_009,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1dc491fd77b971b679c40032,framing_SC_coding_INTENTIONAL_027,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+863668e9236a6b0cd02dbb19,framing_SC_coding_INTENTIONAL_031,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+8882b9fff6edfbdeb39b8a33,framing_WC_coding_UNINTENTIONAL_055,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+9b68830771fa4c6a47eb49b4,framing_LMSYS_coding_INTENTIONAL_030,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+aae66ea2fce85602bbf0372b,framing_SC_writing_UNINTENTIONAL_070,ShareChat,writing,UNINTENTIONAL,INTENTIONAL,reject,"first user turn explicitly asks for information, explanation, or procedural understanding"
+8a2d5be1ab313de5e353b620,framing_WC_writing_INTENTIONAL_036,WildChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d3943de5d2ba11a0de478603,framing_LMSYS_coding_INTENTIONAL_048,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a0bdca54558f8da8fad1772d,framing_SC_coding_INTENTIONAL_039,ShareChat,coding,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+a71026fb6197d937778d337a,framing_SC_coding_INTENTIONAL_028,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+688b446f49c611299da5cb72,framing_LMSYS_writing_INTENTIONAL_040,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+61e8abc729a6d4c08f7d5e30,framing_WC_writing_INTENTIONAL_009,WildChat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+29d278d0ce7ef97252ba7422,framing_SC_coding_UNINTENTIONAL_064,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1124955d7286c91ecfc0096b,framing_WC_coding_UNINTENTIONAL_069,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5dd278b428610328411b92ac,framing_LMSYS_coding_INTENTIONAL_015,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+6e2f30983db8d48f1792c22d,framing_WC_coding_INTENTIONAL_025,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+f6e238b7b57e9ad6d37d272f,framing_WC_coding_UNINTENTIONAL_075,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+26fc362e89c5a86074d42b8f,framing_SC_writing_INTENTIONAL_049,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a43cefe405ccece92a2d5329,framing_SC_writing_INTENTIONAL_020,ShareChat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ef92bca5cc93ce76f5ec41a8,framing_WC_coding_UNINTENTIONAL_062,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+42200d256e9ef95fa6acf967,framing_WC_writing_UNINTENTIONAL_056,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d4d721f5989bc11108a8613f,framing_SC_writing_UNINTENTIONAL_063,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+213038a65fd58529024c9ed6,framing_LMSYS_coding_INTENTIONAL_011,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+af5eb12dd66f1e9eb344216f,framing_LMSYS_coding_UNINTENTIONAL_069,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+301402d0a27e28400626da09,framing_LMSYS_writing_INTENTIONAL_005,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+00802fa95f451308d0d68ffb,framing_LMSYS_coding_INTENTIONAL_034,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+664016dedc4ea223efbc781f,framing_WC_coding_INTENTIONAL_015,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+de39380f5982a2617970cdc9,framing_WC_coding_INTENTIONAL_040,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+74bdcfacef1aaeda80e0c972,framing_LMSYS_writing_INTENTIONAL_034,LMSYS Chat,writing,INTENTIONAL,UNINTENTIONAL,reject,"first user turn is primarily a direct output/edit/generation/debug or role-play request, not explicit learning framing"
+181c0dd8a595db5ef2ecb7be,framing_SC_coding_UNINTENTIONAL_069,ShareChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+95ff0aa5a273cf625a6ed94a,framing_WC_coding_INTENTIONAL_018,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+5367ffbac8382c6bce018925,framing_WC_coding_INTENTIONAL_045,WildChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+895d6d43808c7768347e5424,framing_SC_coding_INTENTIONAL_033,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+36129b4819d4dfb2e5009837,framing_WC_writing_UNINTENTIONAL_070,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+80504482284cde64e010bc1a,framing_WC_writing_UNINTENTIONAL_053,WildChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+a1eb68e85badebeeeb506742,framing_SC_coding_INTENTIONAL_010,ShareChat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ce370e3a42a23680254eb165,framing_LMSYS_writing_INTENTIONAL_043,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+abaf590892efd486b5cd9fed,framing_LMSYS_coding_INTENTIONAL_006,LMSYS Chat,coding,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+d2a602485e84ea3c1608c364,framing_WC_coding_UNINTENTIONAL_053,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+ccd1d66dd67a4065950fa74f,framing_SC_writing_UNINTENTIONAL_067,ShareChat,writing,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+1a46112b9d6773ba3ea363a5,framing_LMSYS_coding_UNINTENTIONAL_061,LMSYS Chat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e48dec4f3eb71ae80e5130b6,framing_LMSYS_writing_INTENTIONAL_026,LMSYS Chat,writing,INTENTIONAL,INTENTIONAL,accept,production label retained after AI manual review of the first user turn
+e99ebae39f6faf76f474423b,framing_WC_coding_UNINTENTIONAL_067,WildChat,coding,UNINTENTIONAL,UNINTENTIONAL,accept,production label retained after AI manual review of the first user turn
