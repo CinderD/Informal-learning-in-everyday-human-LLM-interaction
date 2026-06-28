@@ -1,0 +1,47 @@
+{
+  "title": "Derived data and reproducibility artifacts for Informal learning in everyday human-LLM interaction",
+  "upload_type": "dataset",
+  "publication_date": "2026-06-28",
+  "version": "v0.1.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Chen, Zixin",
+      "affiliation": "The Hong Kong University of Science and Technology"
+    },
+    {
+      "name": "Li, Haotian",
+      "affiliation": "Microsoft Research Asia"
+    },
+    {
+      "name": "Xiao, Ziang",
+      "affiliation": "Johns Hopkins University"
+    },
+    {
+      "name": "Qu, Huamin",
+      "affiliation": "The Hong Kong University of Science and Technology"
+    },
+    {
+      "name": "Xie, Xing",
+      "affiliation": "Microsoft Research Asia"
+    }
+  ],
+  "description": "<p>This release provides derived data and custom code needed to verify the aggregate figures, tables and statistical summaries for the manuscript <em>Informal learning in everyday human-LLM interaction</em>.</p><p>Included materials are numeric figure source data, de-identified conversation-level and adjacent-turn analytic label tables, statistical outputs, table source files, custom scripts and SHA-256 checksums. The release intentionally excludes raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API keys. Raw public corpora should be obtained from their original providers under their own licences and terms.</p>",
+  "keywords": [
+    "human-AI interaction",
+    "informal learning",
+    "large language models",
+    "scaffolding",
+    "learner engagement",
+    "derived data",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/CinderD/Informal-learning-in-everyday-human-LLM-interaction",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "This archive contains derived analytic artifacts only. It should not be used to attempt re-identification, reconstruction of raw conversations or linkage to original user histories."
+}
