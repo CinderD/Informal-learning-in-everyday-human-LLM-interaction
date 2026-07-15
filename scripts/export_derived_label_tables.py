@@ -10,6 +10,7 @@ regression checks.
 from __future__ import annotations
 
 import csv
+import gzip
 import hashlib
 import os
 import shutil
@@ -230,7 +231,8 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 
 def write_rows(path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as f:
+    opener = gzip.open if path.suffix == ".gz" else open
+    with opener(path, "wt", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
@@ -419,11 +421,11 @@ These files provide de-identified analytic labels for the manuscript's main publ
 
 ## Files
 
-Each dataset folder contains:
+Each dataset folder contains compressed CSV tables:
 
-- `conversation_labels.csv`: one row per analytic conversation, with conversation-level user engagement, assistant scaffolding and contextual labels.
-- `user_to_assistant_pair_labels.csv`: one row per user turn that can be paired with the next assistant turn, with the user-side label and next assistant support labels.
-- `assistant_to_user_pair_labels.csv`: one row per assistant turn that can be paired with a surrounding user state and next user outcome, with support labels and adjacent user engagement labels.
+- `conversation_labels.csv.gz`: one row per analytic conversation, with conversation-level user engagement, assistant scaffolding and contextual labels.
+- `user_to_assistant_pair_labels.csv.gz`: one row per user turn that can be paired with the next assistant turn, with the user-side label and next assistant support labels.
+- `assistant_to_user_pair_labels.csv.gz`: one row per assistant turn that can be paired with a surrounding user state and next user outcome, with support labels and adjacent user engagement labels.
 
 ## Row Counts
 
@@ -433,7 +435,7 @@ Each dataset folder contains:
 
 ## Notes
 
-The adjacent-pair files are not a complete raw turn dump. They preserve the analytic turn-pair units used in the temporal and adjacent-turn models. Conversation-level counts in `conversation_labels.csv` retain the full user-turn and assistant-turn totals used for Table 1 and conversation-level analyses.
+The adjacent-pair files are not a complete raw turn dump. They preserve the analytic turn-pair units used in the temporal and adjacent-turn models. Conversation-level counts in `conversation_labels.csv.gz` retain the full user-turn and assistant-turn totals used for Table 1 and conversation-level analyses.
 """
     (OUT / "README.md").write_text(text, encoding="utf-8")
 
@@ -470,9 +472,9 @@ def main() -> None:
         conv, allowed_conv_ids = export_conversation(setting)
         u2a = export_u2a(setting, allowed_conv_ids)
         a2u = export_a2u(setting, allowed_conv_ids)
-        write_rows(dataset_dir / "conversation_labels.csv", CONVERSATION_COLUMNS, conv)
-        write_rows(dataset_dir / "user_to_assistant_pair_labels.csv", U2A_COLUMNS, u2a)
-        write_rows(dataset_dir / "assistant_to_user_pair_labels.csv", A2U_COLUMNS, a2u)
+        write_rows(dataset_dir / "conversation_labels.csv.gz", CONVERSATION_COLUMNS, conv)
+        write_rows(dataset_dir / "user_to_assistant_pair_labels.csv.gz", U2A_COLUMNS, u2a)
+        write_rows(dataset_dir / "assistant_to_user_pair_labels.csv.gz", A2U_COLUMNS, a2u)
         summary_rows.append(
             {
                 "dataset": str(setting["dataset"]),

@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\scriptsize
+\centering
+\caption{\textbf{Consolidated human--LLM corpus-scale label agreement.} The audits compare final LLM-assisted corpus-scale labels with human-confirmed labels using one-vs-rest binary coding for each label. User-framing, user-engagement and assistant-support audits were stratified across the six corpus-by-task settings, with 450 first user turns, 600 user turns and 180 assistant turns reviewed, respectively. Final human labels were confirmed after item-level review. The table reports audit size, LLM-positive counts, human-positive counts, precision, recall, F1, MCC, Gwet AC1 and accuracy.}
+\label{tab:production_label_validation}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrrrrr}
+\toprule
+Role & Label & Audit N & LLM label + & Human + & Precision & Recall & F1 & MCC & Gwet AC1 & Accuracy \\
+\midrule
+\multicolumn{11}{l}{\textit{Conversation-level framing}} \\
+Conversation & Intentional framing & 450 & 300 & 239 & 0.770 & 0.967 & 0.857 & 0.677 & 0.671 & 0.829 \\
+\midrule
+\multicolumn{11}{l}{\textit{User engagement}} \\
+User & Constructive (\texttt{C}) & 600 & 300 & 327 & 0.963 & 0.884 & 0.922 & 0.840 & 0.837 & 0.918 \\
+User & Active (\texttt{A}) & 600 & 120 & 111 & 0.850 & 0.919 & 0.883 & 0.856 & 0.935 & 0.955 \\
+User & Passive (\texttt{P}) & 600 & 90 & 80 & 0.889 & 1.000 & 0.941 & 0.934 & 0.978 & 0.983 \\
+User & None & 600 & 90 & 82 & 0.889 & 0.976 & 0.930 & 0.920 & 0.974 & 0.980 \\
+\midrule
+\multicolumn{11}{l}{\textit{Assistant scaffolding and support forms}} \\
+Assistant & Scaffolding & 180 & 144 & 139 & 0.896 & 0.928 & 0.912 & 0.590 & 0.791 & 0.861 \\
+Assistant & Feedback (\texttt{M1}) & 180 & 45 & 51 & 1.000 & 0.882 & 0.938 & 0.918 & 0.945 & 0.967 \\
+Assistant & Hinting (\texttt{M2}) & 180 & 43 & 45 & 0.930 & 0.889 & 0.909 & 0.880 & 0.930 & 0.956 \\
+Assistant & Instructing (\texttt{M3}) & 180 & 51 & 55 & 0.745 & 0.691 & 0.717 & 0.600 & 0.715 & 0.833 \\
+Assistant & Explaining (\texttt{M4}) & 180 & 87 & 110 & 1.000 & 0.791 & 0.883 & 0.772 & 0.747 & 0.872 \\
+Assistant & Modelling (\texttt{M5}) & 180 & 48 & 79 & 0.958 & 0.582 & 0.724 & 0.631 & 0.642 & 0.806 \\
+Assistant & Questioning (\texttt{M6}) & 180 & 35 & 20 & 0.543 & 0.950 & 0.691 & 0.675 & 0.873 & 0.906 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

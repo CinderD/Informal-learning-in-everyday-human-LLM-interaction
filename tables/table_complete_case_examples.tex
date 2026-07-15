@@ -1,0 +1,132 @@
+\definecolor{caseborder}{HTML}{D6DEE6}
+\definecolor{casefill}{HTML}{F8FAFB}
+\definecolor{caseheadfill}{HTML}{EEF3F6}
+\definecolor{caseblue}{HTML}{2F5F83}
+\definecolor{caseteal}{HTML}{2F7E72}
+\definecolor{caseconstruct}{HTML}{9B4F3A}
+\definecolor{caseactive}{HTML}{8A6A1F}
+\definecolor{caseref}{HTML}{65707A}
+\definecolor{casepale}{HTML}{E8EEF2}
+\definecolor{casechipfill}{HTML}{DFE8ED}
+\definecolor{caseheaderchip}{HTML}{31576A}
+\definecolor{casenote}{HTML}{4D5C66}
+
+\newcommand{\casebadge}[3]{%
+  \begingroup
+  \setlength{\fboxsep}{1.8pt}%
+  \colorbox{#1}{\textcolor{#2}{\scriptsize\strut\textbf{#3}}}%
+  \endgroup}
+\newcommand{\casecode}[1]{\casebadge{casepale}{caseblue}{#1}}
+\newcommand{\userturn}[1]{\casebadge{caseblue}{white}{\(\triangleright\) #1}\par{\scriptsize\textcolor{caseblue}{User}}}
+\newcommand{\assistantturn}[1]{\casebadge{caseteal}{white}{\(\diamond\) #1}\par{\scriptsize\textcolor{caseteal}{Assistant}}}
+\newcommand{\casecontinued}[1]{{\scriptsize\textcolor{caseref}{#1}}}
+\newcommand{\activebadge}{\casebadge{caseactive}{white}{\(\rightarrow\) A active}}
+\newcommand{\constructivebadge}{\casebadge{caseconstruct}{white}{\(\uparrow\) C constructive}}
+\newcommand{\scaffoldbadge}{\casebadge{caseteal}{white}{\(\ast\) Scaffolded}}
+\newcommand{\referencebadge}{\casebadge{caseref}{white}{\(\cdot\) Reference}}
+\newcommand{\casekey}[1]{\textcolor{caseconstruct}{\textbf{#1}}}
+\newcommand{\supportkey}[1]{\textcolor{caseteal}{\textbf{#1}}}
+\newcommand{\casechip}[1]{\casebadge{casechipfill}{caseblue}{#1}}
+\newcommand{\casefield}[2]{%
+  \casebadge{caseheaderchip}{white}{#1}\hspace{5pt}{\scriptsize\textcolor{caseblue}{\textbf{#2}}}}
+\newcommand{\caseheader}[6]{%
+  \begingroup
+  \setlength{\fboxsep}{5.0pt}%
+  \colorbox{caseheadfill}{%
+  \begin{minipage}{0.965\linewidth}
+  {\small\textcolor{caseblue}{\textbf{#1}}\quad \textbf{#2}}\par
+  \vspace{3pt}
+  {\scriptsize\textcolor{casenote}{#6}}\par
+  \vspace{5pt}
+  {\casefield{Setting}{#3}\hspace{12pt}\casefield{User framing}{#4}}\par
+  \vspace{3pt}
+  {\casefield{Excerpt length}{#5}}
+  \end{minipage}}%
+  \endgroup}
+\newcommand{\caselegend}{%
+  \begingroup
+  {\scriptsize\textcolor{caseblue}{\textbf{Legend}}\quad
+  \constructivebadge\hspace{3pt}\activebadge\hspace{3pt}\scaffoldbadge\hspace{3pt}\referencebadge}\par\vspace{1pt}
+  {\scriptsize\textcolor{caseblue}{\textbf{Assistant codes}}\quad
+  \casecode{I1/I2} support intent; \casecode{M1--M6} support forms (non-exclusive).}
+  \endgroup}
+
+\clearpage
+\begingroup
+\footnotesize
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.11\textwidth}>{\raggedright\arraybackslash}p{0.58\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}}
+\caption{\textbf{De-identified coding case excerpt with turn-level labels.} A retained WildChat coding conversation excerpt formatted for readability. Badges encode role, user engagement and assistant support labels.}
+\label{tab:complete_coding_case}\\
+\multicolumn{3}{p{0.96\textwidth}}{\caseheader{Coding case}{wxWidgets menu debugging}
+{WildChat coding}
+{Unintentional}
+{4-turn excerpt}
+{Feedback and instructions diagnose a likely cause; a follow-up troubleshooting response uses checks and a request for context to continue debugging.}}\\[5pt]
+\multicolumn{3}{p{0.96\textwidth}}{\caselegend}\\[5pt]
+\toprule
+\textbf{Turn} & \textbf{De-identified excerpt} & \textbf{Label and annotation cue} \\
+\midrule
+\endfirsthead
+\caption[]{\textbf{De-identified coding case excerpt with turn-level labels} (continued).}\\
+\toprule
+\textbf{Turn} & \textbf{De-identified excerpt} & \textbf{Label and annotation cue} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\userturn{U1} & ``I have this C++ wxWidgets code to popup a menu but can't make it to work, I got an error that can't popup a \texttt{NULL} menu. How can I do this correctly? ... \texttt{hamburgerMenu = new wxMenu();} ... \texttt{PopupMenu(hamburgerMenu, pos);}'' & \activebadge\par The user asks for help debugging a specific popup-menu error. \\
+\addlinespace[4pt]
+\assistantturn{A1} & ``Based on the code you provided, it seems that the variable \texttt{bpButtonHamburger} is not assigned to an actual \texttt{wxBitmapButton} object. Therefore, when the \texttt{OnHamburgerClick} function is called, \texttt{bpButtonHamburger} is \texttt{NULL}, which leads to the error you're experiencing.'' & \scaffoldbadge\quad \casecode{I2}\ \casecode{M1}\ \casecode{M3}\ \casecode{M4}\par The reply gives \supportkey{feedback} on the likely fault, \supportkey{instructs} what to change and explains why the handler matters. \\
+\addlinespace[3pt]
+\casecontinued{A1 cont.} & ``To fix this issue, make sure you initialize \texttt{bpButtonHamburger} with a valid \texttt{wxBitmapButton} instance ... note that the event type in \texttt{OnHamburgerClick} has changed from \texttt{wxContextMenuEvent} to \texttt{wxCommandEvent}, as it is more appropriate for handling button click events.'' & \casecontinued{Same scaffolded response; instruction and explanation continued.} \\
+\addlinespace[4pt]
+\userturn{U2} & ``No I forgot to add that part but the button was already correctly initialized'' & \activebadge\par The user provides task-relevant clarification that redirects the debugging path. \\
+\addlinespace[4pt]
+\assistantturn{A2} & ``If the \texttt{bpButtonHamburger} button is already correctly initialized and you're still getting the error that the menu is \texttt{NULL}, there may be some other issue causing the problem. Here are some things you can check: make sure the \texttt{hamburgerMenu} object is not being destroyed; verify that \texttt{OnHamburgerClick} is being called; double-check the button ID and event handler; check for conflicting handlers.'' & \scaffoldbadge\quad \casecode{I1}\ \casecode{M2}\ \casecode{M6}\par The reply gives diagnostic cues and uses \supportkey{questioning/request for context} to continue troubleshooting. \\
+\addlinespace[3pt]
+\casecontinued{A2 cont.} & ``If none of these suggestions help, please provide more context or the complete code so we can further investigate the issue and provide a solution.'' & \casecontinued{Same scaffolded response; questioning/request for context continued.} \\
+\end{longtable}
+\endgroup
+
+\clearpage
+\begingroup
+\footnotesize
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.11\textwidth}>{\raggedright\arraybackslash}p{0.58\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}}
+\caption{\textbf{De-identified writing case excerpt with turn-level labels.} A retained WildChat writing conversation excerpt formatted for readability. Badges encode role, user engagement and assistant support labels.}
+\label{tab:complete_writing_case}\\
+\multicolumn{3}{p{0.96\textwidth}}{\caseheader{Writing case}{Thesis revision rationale}
+{WildChat writing}
+{Intentional}
+{4-turn excerpt}
+{The exchange asks why a report sentence is weak, applies the explanation to a revised claim and receives feedback on the revised reasoning.}}\\[5pt]
+\multicolumn{3}{p{0.96\textwidth}}{\caselegend}\\[5pt]
+\toprule
+\textbf{Turn} & \textbf{De-identified excerpt} & \textbf{Label and annotation cue} \\
+\midrule
+\endfirsthead
+\caption[]{\textbf{De-identified writing case excerpt with turn-level labels} (continued).}\\
+\toprule
+\textbf{Turn} & \textbf{De-identified excerpt} & \textbf{Label and annotation cue} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\userturn{U1} & ``I'm revising a short report introduction and want to understand why this sentence sounds vague: `This project is good for users because it improves the system.' What makes it weak, and how should I think about making the claim more specific?'' & \constructivebadge\par The user identifies a writing problem, asks for the rationale behind the weakness and requests a revision principle rather than only a corrected sentence. \\
+\addlinespace[4pt]
+\assistantturn{A1} & ``The sentence is grammatical, but it is vague because `good for users' and `improves the system' do not say who benefits, what changes or why the change matters. A stronger version should name the user group, the concrete action and the outcome. For example, ask yourself: what task becomes easier, faster or less error-prone?'' & \scaffoldbadge\quad \casecode{I2}\ \casecode{M1}\ \casecode{M2}\ \casecode{M4}\par The reply gives feedback on the draft, explains the weakness and offers a guiding diagnostic question. \\
+\addlinespace[4pt]
+\userturn{U2} & ``So the problem is not grammar but that the sentence hides the causal link. Would this be stronger: `The project reduces repeated data entry for clinic staff by combining two forms into one workflow'?'' & \constructivebadge\par The user restates the principle, diagnoses the original weakness and tests a revised claim against the explanation. \\
+\addlinespace[4pt]
+\assistantturn{A2} & ``Yes, that is stronger. It names the audience, the mechanism and the benefit, so the reader can see why the project matters. If this is for a formal report, you could make it more concise: `By combining two forms into one workflow, the project reduces repeated data entry for clinic staff.' '' & \scaffoldbadge\quad \casecode{I1}\ \casecode{I2}\ \casecode{M1}\ \casecode{M4}\par The reply gives feedback on the user's revision and explains why the revised sentence better supports the report claim. \\
+\addlinespace[3pt]
+\casecontinued{A2 cont.} & ``You can then follow it with evidence, such as time saved or fewer duplicate entries, if the report requires support for the claim.'' & \casecontinued{Same assistant response; feedback and explanation continued.} \\
+\end{longtable}
+\endgroup

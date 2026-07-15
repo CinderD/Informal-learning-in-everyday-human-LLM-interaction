@@ -1,6 +1,6 @@
 # Release Readiness Audit
 
-Date: 2026-06-28
+Date: 2026-07-16
 
 ## Scope
 
@@ -8,8 +8,8 @@ This audit checks the current manuscript release repository against Nature Portf
 
 ## Current Package
 
-- `source_data/` contains numeric source data for the main numeric figures and selected supplementary figures.
-- `derived_label_tables/` contains de-identified conversation-level and adjacent-turn label-only tables for WildChat, LMSYS Chat and ShareChat.
+- `source_data/` contains numeric source data for the main numeric figures and Appendix C visual summaries.
+- `derived_label_tables/` contains compressed, de-identified conversation-level and adjacent-turn label-only tables for WildChat, LMSYS Chat and ShareChat.
 - `statistical_outputs/integrated_regression/` contains regression, bootstrap, confidence-interval, p-value and sensitivity outputs used in the manuscript and appendix.
 - `statistical_outputs/support_intent/` contains support-intent prevalence and contrast summaries.
 - `tables/` contains the LaTeX source for manuscript and appendix tables.
@@ -27,9 +27,9 @@ The package excludes raw message text, user identifiers, linked user histories, 
 - Numeric source-data check: 18/18 row-level checks passed in `numeric_consistency_checks.csv`.
 - Derived label-table check: conversation counts, user-turn counts and assistant-turn counts matched Table 1 for all six main task settings.
 - Derived label-table leakage scan found no raw message-text fields, original conversation identifiers, URLs, timestamps, API-key strings, internal absolute paths or archived non-current labels.
-- Figure 3 panel b source data matched `outputs/integrated_regression/fig3_adjusted_model_significance.csv`.
-- Figure 3 panel c source data matched `outputs/integrated_regression/fig3_user_framing_stratified_poisson_significance.csv`.
-- Figure 5 panel a source data matched `outputs/integrated_regression/key_percentage_lifts_significance.csv`.
+- Figure 3 panel b source data matched `statistical_outputs/integrated_regression/fig3_adjusted_model_significance.csv`.
+- Figure 3 panel c source data matched `statistical_outputs/integrated_regression/fig3_user_framing_stratified_poisson_significance.csv`.
+- Figure 5 panel a source data matched `statistical_outputs/integrated_regression/key_percentage_lifts_significance.csv`.
 - Active-source wording scan found no remaining active occurrences of obsolete comparison-corpus terms, obsolete response terminology, matched-setting terminology, strictness wording or measured-user-status wording.
 - LaTeX compilation completed successfully with `latexmk -pdf -interaction=nonstopmode -halt-on-error sn-article.tex`.
 
@@ -46,15 +46,12 @@ The Table 1 total counts were rechecked from the displayed setting rows: 128,569
 - Author contributions: present, but final author initials and role allocation remain a team-level item.
 - Acknowledgements and funding: present, but final funder names and grant numbers remain a team-level item.
 - LLM use statement: present in `sections/06-declarations.tex`.
-- Reporting summary / editorial checklist note: present in `sections/06-declarations.tex`.
 - Figure source data statement: present in `sections/06-declarations.tex`.
 
 ## Remaining Manual Items Before Submission
 
-- Optional before final publication: archive this GitHub release in Zenodo, OSF or Dataverse and insert the resulting DOI/accession in the paper.
-- Replace the author-contribution placeholder with final CRediT initials and roles.
-- Replace the acknowledgements/funding placeholder with final funder names, grant numbers and acknowledgements.
-- Insert the exact IRB/exemption identifier if the team has one; otherwise keep the secondary-analysis ethics statement and confirm it matches institutional requirements.
+- Upload the updated `v0.1.1` package to the Zenodo record cited in the manuscript and verify that the displayed Zenodo metadata matches `.zenodo.json` and `CITATION.cff`.
+- Confirm final author contributions, acknowledgements, funding and ethics wording against the submission system metadata.
 - Decide whether the final journal upload should use the modular Overleaf source or a flattened single `.tex` file with embedded bibliography, depending on the journal production instructions.
 - Confirm whether the final journal upload should also include rendered figure PDFs/SVGs in addition to numeric source-data CSVs.
 

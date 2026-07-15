@@ -1,6 +1,6 @@
 # Derived Label Tables
 
-These files provide de-identified analytic labels for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
+These files provide compressed, de-identified analytic labels for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
 
 ## Scope
 
@@ -12,11 +12,11 @@ These files provide de-identified analytic labels for the manuscript's main publ
 
 ## Files
 
-Each dataset folder contains:
+Each dataset folder contains compressed CSV tables:
 
-- `conversation_labels.csv`: one row per analytic conversation, with conversation-level user engagement, assistant scaffolding and contextual labels.
-- `user_to_assistant_pair_labels.csv`: one row per user turn that can be paired with the next assistant turn, with the user-side label and next assistant support labels.
-- `assistant_to_user_pair_labels.csv`: one row per assistant turn that can be paired with a surrounding user state and next user outcome, with support labels and adjacent user engagement labels.
+- `conversation_labels.csv.gz`: one row per analytic conversation, with conversation-level user engagement, assistant scaffolding and contextual labels.
+- `user_to_assistant_pair_labels.csv.gz`: one row per user turn that can be paired with the next assistant turn, with the user-side label and next assistant support labels.
+- `assistant_to_user_pair_labels.csv.gz`: one row per assistant turn that can be paired with a surrounding user state and next user outcome, with support labels and adjacent user engagement labels.
 
 ## Row Counts
 
@@ -31,4 +31,4 @@ Each dataset folder contains:
 
 ## Notes
 
-The adjacent-pair files are not a complete raw turn dump. They preserve the analytic turn-pair units used in the temporal and adjacent-turn models. Conversation-level counts in `conversation_labels.csv` retain the full user-turn and assistant-turn totals used for Table 1 and conversation-level analyses.
+The adjacent-pair files are not a complete raw turn dump. They preserve the analytic turn-pair units used in the temporal and adjacent-turn models. Conversation-level counts in `conversation_labels.csv.gz` retain the full user-turn and assistant-turn totals used for Table 1 and conversation-level analyses.
