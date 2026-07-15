@@ -38,6 +38,11 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "10.5281/zenodo.20995945",
+      "relation": "isIdenticalTo",
+      "scheme": "doi"
+    },
+    {
       "identifier": "https://github.com/CinderD/Informal-learning-in-everyday-human-LLM-interaction",
       "relation": "isSupplementTo",
       "scheme": "url"

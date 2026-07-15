@@ -3,8 +3,9 @@ message: "If you use these derived data or scripts, please cite the associated m
 title: "Derived data and reproducibility artifacts for Informal learning in everyday human-LLM interaction"
 version: "v0.1.2"
 date-released: "2026-07-16"
+doi: "10.5281/zenodo.20995945"
 repository-code: "https://github.com/CinderD/Informal-learning-in-everyday-human-LLM-interaction"
-url: "https://github.com/CinderD/Informal-learning-in-everyday-human-LLM-interaction/releases/tag/v0.1.2"
+url: "https://doi.org/10.5281/zenodo.20995945"
 abstract: "Derived, de-identified analytic label tables, figure source data, statistical outputs, table source files, custom scripts and annotation reproducibility summaries supporting the manuscript Informal learning in everyday human-LLM interaction. The release intentionally excludes raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API keys."
 authors:
   - family-names: "Chen"
