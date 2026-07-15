@@ -50,7 +50,7 @@ The Table 1 total counts were rechecked from the displayed setting rows: 128,569
 
 ## Remaining Manual Items Before Submission
 
-- Upload the updated `v0.1.1` package to the Zenodo record cited in the manuscript and verify that the displayed Zenodo metadata matches `.zenodo.json` and `CITATION.cff`.
+- Publish the updated `v0.1.2` GitHub release so that Zenodo can archive the current submission package, then verify that the displayed Zenodo metadata matches `.zenodo.json` and `CITATION.cff`.
 - Confirm final author contributions, acknowledgements, funding and ethics wording against the submission system metadata.
 - Decide whether the final journal upload should use the modular Overleaf source or a flattened single `.tex` file with embedded bibliography, depending on the journal production instructions.
 - Confirm whether the final journal upload should also include rendered figure PDFs/SVGs in addition to numeric source-data CSVs.
