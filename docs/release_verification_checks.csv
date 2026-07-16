@@ -1,4 +1,5 @@
 check,ok,details
 numeric_consistency,True,18/18 source-data checks passed
+figure2b_source_data,True,24 Fig. 2b rows match mean within-conversation ratios
 derived_label_tables,True,"Table 1 totals verified: conversations=128569, user_turns=491685, assistant_turns=489785"
 manifest,True,118 files verified

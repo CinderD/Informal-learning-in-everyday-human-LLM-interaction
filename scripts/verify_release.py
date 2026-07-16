@@ -23,6 +23,14 @@ EXPECTED_TOTALS = {
 }
 SUPPORT_VALUES = {"", "S1", "S2"}
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+SOURCE_SETTING_NAMES = {
+    "WildChat coding": "WC coding",
+    "WildChat writing": "WC writing",
+    "LMSYS coding": "LMSYS coding",
+    "LMSYS writing": "LMSYS writing",
+    "ShareChat coding": "SC coding",
+    "ShareChat writing": "SC writing",
+}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -88,6 +96,43 @@ def check_numeric_consistency() -> tuple[bool, str]:
     ok_values = [str(row.get("ok", "")).strip().lower() for row in rows]
     failed = sum(value not in {"true", "1", "yes"} for value in ok_values)
     return failed == 0, f"{len(rows) - failed}/{len(rows)} source-data checks passed"
+
+
+def check_figure2b_source_data() -> tuple[bool, str]:
+    """Check Fig. 2b against mean within-conversation user-turn ratios."""
+    source_path = ROOT / "source_data" / "figure2_source_data.csv"
+    source_rows = [
+        row for row in read_csv(source_path)
+        if row.get("figure") == "Figure 2" and row.get("panel") == "b"
+    ]
+    source = {
+        (row["setting"], row["measure"], row["group"]): float(row["estimate"])
+        for row in source_rows
+    }
+    failures: list[str] = []
+    summary_rows = read_csv(ROOT / "derived_label_tables" / "derived_label_tables_summary.csv")
+    for row in summary_rows:
+        folder = ROOT / "derived_label_tables" / dataset_slug(row["dataset"]) / row["task"]
+        conv = read_csv(folder / "conversation_labels.csv.gz")
+        setting = SOURCE_SETTING_NAMES.get(row["setting"], row["setting"])
+        for intent_flag, group in [("1", "intentional"), ("0", "unintentional")]:
+            sub = [item for item in conv if item["is_intentional"] == intent_flag]
+            expected = {
+                "Cognitive": sum(float(item["cognitive_overall_user_turn_ratio"]) for item in sub) / len(sub) * 100,
+                "Constructive": sum(float(item["constructive_user_turn_ratio"]) for item in sub) / len(sub) * 100,
+            }
+            for measure, value in expected.items():
+                observed = source.get((setting, measure, group))
+                if observed is None:
+                    failures.append(f"missing {setting} {measure} {group}")
+                    continue
+                if min(abs(observed - value), abs(observed - round(value, 1))) > 5e-3:
+                    failures.append(
+                        f"{setting} {measure} {group}: source={observed:.3f}, expected={value:.3f}"
+                    )
+    if failures:
+        return False, "; ".join(failures[:8])
+    return True, f"{len(source_rows)} Fig. 2b rows match mean within-conversation ratios"
 
 
 def check_derived_tables() -> tuple[bool, str]:
@@ -156,7 +201,7 @@ def write_outputs(checks: list[tuple[str, bool, str]]) -> None:
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
     with (docs / "release_verification_checks.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["check", "ok", "details"])
+        writer = csv.DictWriter(handle, fieldnames=["check", "ok", "details"], lineterminator="\n")
         writer.writeheader()
         for name, ok, details in checks:
             writer.writerow({"check": name, "ok": ok, "details": details})
@@ -165,7 +210,7 @@ def write_outputs(checks: list[tuple[str, bool, str]]) -> None:
         "",
         "Date: 2026-07-16",
         "",
-        "This report verifies the public release package after applying the v0.1.3 release-audit fixes. The checks cover package integrity, manuscript source-data consistency and derived label-table encoding. They do not re-run raw-corpus annotation, which requires separate raw-data access and API credentials.",
+        "This report verifies the public release package after applying the v0.1.4 Fig. 2b source-data consistency update and prior release-audit fixes. The checks cover package integrity, manuscript source-data consistency and derived label-table encoding. They do not re-run raw-corpus annotation, which requires separate raw-data access and API credentials.",
         "",
         "## Checks",
         "",
@@ -198,6 +243,7 @@ def main() -> None:
 
     checks = [
         ("numeric_consistency", *check_numeric_consistency()),
+        ("figure2b_source_data", *check_figure2b_source_data()),
         ("derived_label_tables", *check_derived_tables()),
         ("manifest", *check_manifest()),
     ]
