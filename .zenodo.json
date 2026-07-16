@@ -2,7 +2,7 @@
   "title": "Derived data and reproducibility artifacts for Informal learning in everyday human-LLM interaction",
   "upload_type": "dataset",
   "publication_date": "2026-07-16",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "access_right": "open",
   "creators": [
     {
@@ -26,7 +26,7 @@
       "affiliation": "Microsoft Research Asia"
     }
   ],
-  "description": "<p>This release provides derived data and custom code needed to verify the aggregate figures, Appendix C visual summaries, tables and statistical summaries for the manuscript <em>Informal learning in everyday human-LLM interaction</em>.</p><p>Included materials are numeric figure source data, de-identified conversation-level and adjacent-turn analytic label tables, statistical outputs, table source files, custom scripts, annotation reproducibility summaries and SHA-256 checksums. The release intentionally excludes raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API keys. Raw public corpora should be obtained from their original providers under their own licences and terms.</p>",
+  "description": "<p>This release provides derived data, source values and custom code supporting verification of the aggregate figures, Appendix C visual summaries, tables and statistical summaries for the manuscript <em>Informal learning in everyday human-LLM interaction</em>.</p><p>Included materials are numeric figure source data, label-only conversation-level and adjacent-turn analytic tables, statistical outputs, table source files, custom scripts, annotation reproducibility summaries and SHA-256 checksums. The release intentionally excludes raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API keys. Raw public corpora should be obtained from their original providers under their own licences and terms.</p>",
   "keywords": [
     "human-AI interaction",
     "informal learning",
@@ -48,5 +48,6 @@
       "scheme": "url"
     }
   ],
+  "license": "cc-zero",
   "notes": "This archive contains derived analytic artifacts only. It should not be used to attempt re-identification, reconstruction of raw conversations or linkage to original user histories."
 }

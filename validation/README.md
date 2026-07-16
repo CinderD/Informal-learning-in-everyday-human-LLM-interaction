@@ -1,6 +1,6 @@
 # Validation Artifacts
 
-This directory contains de-identified validation outputs used to support the manuscript's annotation-validity claims.
+This directory contains label-only validation outputs used to support the manuscript's annotation-validity claims.
 
 ## Files
 
@@ -9,9 +9,9 @@ This directory contains de-identified validation outputs used to support the man
 - `writing210_final_human_human_agreement_metrics.csv`: final writing-domain human--human agreement metrics for labels used in the manuscript and supplementary analyses.
 - `constructive_production_validation_c_vs_non_c_final_metrics.csv`: aggregate human--LLM agreement metrics for the constructive-versus-non-constructive production-label audit.
 - `constructive_production_validation_per_label_metrics.csv`: one-vs-rest human--LLM agreement metrics for user engagement production labels.
-- `constructive_production_validation_mismatches_human_confirmed.csv`: de-identified mismatch metadata from the human-confirmed user engagement production-label audit.
+- `constructive_production_validation_mismatches_human_confirmed.csv`: label-only mismatch metadata from the human-confirmed user engagement production-label audit.
 - `assistant_production_validation_per_label_metrics.csv`: one-vs-rest human--LLM agreement metrics for assistant scaffolding and support-form production labels.
-- `assistant_production_validation_mismatches_human_confirmed.csv`: de-identified mismatch metadata from the human-confirmed assistant production-label audit.
+- `assistant_production_validation_mismatches_human_confirmed.csv`: label-only mismatch metadata from the human-confirmed assistant production-label audit.
 - `wildchat_post_labelling_review_summary.csv`: aggregate composition of WildChat post-labelling review samples, with 100 labelled turns per task and no raw text.
 
 ## User-Framing Audit
@@ -36,4 +36,4 @@ The WildChat post-labelling review summary records the production-label composit
 
 ## Privacy Boundary
 
-These files intentionally exclude raw message text, original conversation identifiers, source URLs, timestamps and user identifiers. Case hashes are generated for this release only and are not intended for linkage to raw public corpora.
+These files intentionally exclude raw message text, original conversation identifiers, source URLs, timestamps and user identifiers. Case IDs are release-local and are not intended for linkage to raw public corpora.

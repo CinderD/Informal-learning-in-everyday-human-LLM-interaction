@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export de-identified label-only tables for submission data sharing.
+"""Export label-only analytic tables for submission data sharing.
 
 The exported files intentionally omit raw message text, original conversation
 IDs, URLs, timestamps and user identifiers. They preserve the analytic labels
@@ -11,16 +11,15 @@ from __future__ import annotations
 
 import csv
 import gzip
-import hashlib
 import os
 import shutil
+import uuid
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = Path(os.environ.get("PRODUCTION_OUTPUT_ROOT", ROOT / "production_outputs")).expanduser()
 OUT = ROOT / "derived_label_tables"
-HASH_PREFIX = "nhb_informal_learning_label_release_v1:"
 
 
 SETTINGS = [
@@ -220,8 +219,22 @@ A2U_COLUMNS = [
 ]
 
 
-def stable_hash(value: str) -> str:
-    return hashlib.sha256((HASH_PREFIX + value).encode("utf-8")).hexdigest()
+class ReleaseIdMap:
+    """Release-local pseudonymous IDs.
+
+    The map is created in memory during export and is not written to disk. This
+    prevents the public release from exposing deterministic hashes of raw corpus
+    identifiers while preserving joins among the released analytic tables.
+    """
+
+    def __init__(self) -> None:
+        self._ids: dict[str, str] = {}
+
+    def get(self, namespace: str, value: str) -> str:
+        key = f"{namespace}:{value}"
+        if key not in self._ids:
+            self._ids[key] = f"{namespace}_{uuid.uuid4().hex}"
+        return self._ids[key]
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -267,14 +280,30 @@ def task_domain(task: str) -> str:
     return "coding-oriented" if task == "coding" else "writing-oriented"
 
 
-def base_fields(setting: dict[str, object], row: dict[str, str]) -> dict[str, str]:
+def scaffolded_flag_from_support_type(value: str) -> str:
+    value = str(value or "").strip()
+    if value == "S2":
+        return "1"
+    if value == "S1":
+        return "0"
+    return ""
+
+
+def clean_support_type(value: str) -> str:
+    value = str(value or "").strip()
+    return value if value in {"S1", "S2"} else ""
+
+
+def base_fields(
+    setting: dict[str, object], row: dict[str, str], id_map: ReleaseIdMap
+) -> dict[str, str]:
     raw_id = row["conv_id"]
     return {
         "dataset": str(setting["dataset"]),
         "task": str(setting["task"]),
         "setting": str(setting["setting"]),
         "analysis_scope": str(setting["analysis_scope"]),
-        "conversation_id_hash": stable_hash(raw_id),
+        "conversation_id_hash": id_map.get("conv", raw_id),
         "source_family": str(setting["source_family"]),
         "model_or_source_family": model_or_family(
             raw_id, row.get("chat_model", ""), str(setting["source_family"])
@@ -287,12 +316,14 @@ def base_fields(setting: dict[str, object], row: dict[str, str]) -> dict[str, st
     }
 
 
-def export_conversation(setting: dict[str, object]) -> tuple[list[dict[str, str]], set[str]]:
+def export_conversation(
+    setting: dict[str, object], id_map: ReleaseIdMap
+) -> tuple[list[dict[str, str]], set[str]]:
     rows = []
     allowed_conv_ids: set[str] = set()
     for row in read_rows(Path(setting["level2"])):
         allowed_conv_ids.add(row["conv_id"])
-        out = base_fields(setting, row)
+        out = base_fields(setting, row, id_map)
         out.update(
             {
                 "total_turns": row.get("total_turns", ""),
@@ -331,22 +362,27 @@ def export_conversation(setting: dict[str, object]) -> tuple[list[dict[str, str]
     return rows, allowed_conv_ids
 
 
-def export_u2a(setting: dict[str, object], allowed_conv_ids: set[str]) -> list[dict[str, str]]:
+def export_u2a(
+    setting: dict[str, object], allowed_conv_ids: set[str], id_map: ReleaseIdMap
+) -> list[dict[str, str]]:
     rows = []
     for row in read_rows(Path(setting["u2a"])):
         raw_id = row["conv_id"]
         if raw_id not in allowed_conv_ids:
             continue
-        out = base_fields(setting, row)
+        support_type = clean_support_type(row.get("next_asst_Support_Type", ""))
+        out = base_fields(setting, row, id_map)
         out.update(
             {
-                "user_turn_id_hash": stable_hash(f"{raw_id}:user:{row.get('user_turn_index', '')}"),
+                "user_turn_id_hash": id_map.get(
+                    "userturn", f"{raw_id}:user:{row.get('user_turn_index', '')}"
+                ),
                 "user_turn_index": row.get("user_turn_index", ""),
                 "user_emotional": flag(row.get("user_Emotional", "")),
                 "user_cognitive_level": row.get("user_Cognitive_level", ""),
                 "user_is_constructive": flag(row.get("user_is_C", "")),
-                "next_assistant_support_type": row.get("next_asst_Support_Type", ""),
-                "next_assistant_is_scaffolded": flag(row.get("next_asst_is_S2", "")),
+                "next_assistant_support_type": support_type,
+                "next_assistant_is_scaffolded": scaffolded_flag_from_support_type(support_type),
                 "next_assistant_support_intent": row.get("next_asst_S2_Intent", ""),
                 "next_assistant_is_affective_support": flag(row.get("next_asst_is_I3", "")),
                 "next_assistant_has_M1_feedback": flag(row.get("next_asst_has_M1", "")),
@@ -361,22 +397,25 @@ def export_u2a(setting: dict[str, object], allowed_conv_ids: set[str]) -> list[d
     return rows
 
 
-def export_a2u(setting: dict[str, object], allowed_conv_ids: set[str]) -> list[dict[str, str]]:
+def export_a2u(
+    setting: dict[str, object], allowed_conv_ids: set[str], id_map: ReleaseIdMap
+) -> list[dict[str, str]]:
     rows = []
     for row in read_rows(Path(setting["a2u"])):
         raw_id = row["conv_id"]
         if raw_id not in allowed_conv_ids:
             continue
-        support_type = row.get("asst_Support_Type", "")
-        out = base_fields(setting, row)
+        support_type = clean_support_type(row.get("asst_Support_Type", ""))
+        out = base_fields(setting, row, id_map)
         out.update(
             {
-                "assistant_turn_id_hash": stable_hash(
+                "assistant_turn_id_hash": id_map.get(
+                    "assistantturn",
                     f"{raw_id}:assistant:{row.get('asst_turn_index', '')}"
                 ),
                 "assistant_turn_index": row.get("asst_turn_index", ""),
                 "assistant_support_type": support_type,
-                "assistant_is_scaffolded": "1" if support_type == "S2" else "0" if support_type else "",
+                "assistant_is_scaffolded": scaffolded_flag_from_support_type(support_type),
                 "assistant_support_intent": row.get("asst_S2_Intent", ""),
                 "assistant_has_M1_feedback": flag(row.get("asst_has_M1", "")),
                 "assistant_has_M2_hinting": flag(row.get("asst_has_M2", "")),
@@ -409,14 +448,15 @@ def write_readme(summary_rows: list[dict[str, str]]) -> None:
     )
     text = f"""# Derived Label Tables
 
-These files provide de-identified analytic labels for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
+These files provide label-only analytic tables for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
 
 ## Scope
 
 - Included main corpora: WildChat, LMSYS Chat and ShareChat strict-English.
 - Included tasks: coding-oriented and writing-oriented conversations.
 - Excluded data: raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API credentials.
-- Identifier handling: `conversation_id_hash` and turn-level hashes use SHA-256 over `{HASH_PREFIX}<raw id or raw id + role + turn index>`.
+- Identifier handling: `conversation_id_hash` and turn-level hash columns are legacy schema names. In this release their values are release-local random pseudonymous IDs generated only to join rows within the released analytic tables; no raw-ID mapping is published.
+- Support coding: assistant support type is `S1`, `S2` or blank. Blank support-type rows are outside the scaffolded-versus-reference contrast and have a blank scaffolded indicator; they should not be treated as non-scaffolded reference rows.
 - Raw public corpora must still be obtained from the original providers under their own licences and terms.
 
 ## Files
@@ -464,14 +504,15 @@ def main() -> None:
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True, exist_ok=True)
     summary_rows: list[dict[str, str]] = []
+    id_map = ReleaseIdMap()
     for setting in SETTINGS[:6]:
         for key in ["level2", "u2a", "a2u"]:
             if not Path(setting[key]).exists():
                 raise FileNotFoundError(setting[key])
         dataset_dir = OUT / dataset_slug(str(setting["dataset"])) / str(setting["task"])
-        conv, allowed_conv_ids = export_conversation(setting)
-        u2a = export_u2a(setting, allowed_conv_ids)
-        a2u = export_a2u(setting, allowed_conv_ids)
+        conv, allowed_conv_ids = export_conversation(setting, id_map)
+        u2a = export_u2a(setting, allowed_conv_ids, id_map)
+        a2u = export_a2u(setting, allowed_conv_ids, id_map)
         write_rows(dataset_dir / "conversation_labels.csv.gz", CONVERSATION_COLUMNS, conv)
         write_rows(dataset_dir / "user_to_assistant_pair_labels.csv.gz", U2A_COLUMNS, u2a)
         write_rows(dataset_dir / "assistant_to_user_pair_labels.csv.gz", A2U_COLUMNS, a2u)

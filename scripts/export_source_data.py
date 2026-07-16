@@ -280,7 +280,7 @@ def figure5() -> None:
 def readme() -> None:
     text = """# Figure source data
 
-This directory contains CSV source data for the manuscript's numeric main figures and Appendix C visual summaries.
+This directory contains CSV source data used to render the manuscript's numeric main figures and Appendix C visual summaries.
 
 - `figure2_source_data.csv`: engagement composition, user-framing contrasts and conversation-length gradients.
 - `figure3_source_data.csv`: scaffolded versus reference constructive ratios, adjusted model estimates, framing-stratified estimates and post-answer depth differences.
@@ -292,7 +292,7 @@ This directory contains CSV source data for the manuscript's numeric main figure
 
 Figure 1 is a conceptual framework figure and has no numeric source data. Supplementary table source files are stored under `tables/`, and regression/statistical output CSV files are stored under `statistical_outputs/integrated_regression/`.
 
-Raw message text is not redistributed here. For reproduction from raw conversations, obtain the public corpora from their original releases and run the analysis code against the derived labelling pipeline outputs.
+Raw message text is not redistributed here. For reproduction from raw conversations, obtain the public corpora from their original releases and run the analysis code against the corpus-scale labelling pipeline outputs.
 """
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "README.md").write_text(text)

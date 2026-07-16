@@ -1,13 +1,14 @@
 # Derived Label Tables
 
-These files provide compressed, de-identified analytic labels for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
+These files provide label-only analytic tables for the manuscript's main public-chat task settings. They are intended to complement the aggregate figure source data and statistical-output files.
 
 ## Scope
 
 - Included main corpora: WildChat, LMSYS Chat and ShareChat strict-English.
 - Included tasks: coding-oriented and writing-oriented conversations.
 - Excluded data: raw message text, original conversation identifiers, URLs, timestamps, user identifiers, linked user histories and API credentials.
-- Identifier handling: `conversation_id_hash` and turn-level hashes use SHA-256 over `nhb_informal_learning_label_release_v1:<raw id or raw id + role + turn index>`.
+- Identifier handling: `conversation_id_hash` and turn-level hash columns are legacy schema names. In this release their values are release-local random pseudonymous IDs generated only to join rows within the released analytic tables; no raw-ID mapping is published.
+- Support coding: assistant support type is `S1`, `S2` or blank. Blank support-type rows are outside the scaffolded-versus-reference contrast and have a blank scaffolded indicator; they should not be treated as non-scaffolded reference rows.
 - Raw public corpora must still be obtained from the original providers under their own licences and terms.
 
 ## Files
