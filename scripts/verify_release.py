@@ -56,8 +56,17 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def git_files() -> list[Path]:
-    out = subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True)
+def release_files(manifest_paths: set[str]) -> list[Path]:
+    """Return tracked files in a clone, or manifest files in an archive."""
+    try:
+        out = subprocess.check_output(
+            ["git", "ls-files"],
+            cwd=ROOT,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        return [ROOT / path for path in sorted(manifest_paths)]
     return [ROOT / line for line in out.splitlines() if line and line != "MANIFEST.csv"]
 
 
@@ -68,17 +77,21 @@ def check_manifest() -> tuple[bool, str]:
     with manifest.open(newline="") as handle:
         rows = {row["path"]: row for row in csv.DictReader(handle)}
     failures: list[str] = []
-    for path in git_files():
+    files = release_files(set(rows))
+    for path in files:
         rel = path.relative_to(ROOT).as_posix()
         row = rows.get(rel)
         if row is None:
             failures.append(f"missing {rel}")
             continue
+        if not path.exists():
+            failures.append(f"missing file {rel}")
+            continue
         size = path.stat().st_size
         digest = sha256_file(path)
         if str(size) != row["size_bytes"] or digest != row["sha256"]:
             failures.append(f"mismatch {rel}")
-    extra = sorted(set(rows) - {p.relative_to(ROOT).as_posix() for p in git_files()})
+    extra = sorted(set(rows) - {p.relative_to(ROOT).as_posix() for p in files})
     failures.extend(f"extra {rel}" for rel in extra)
     if failures:
         preview = "; ".join(failures[:8])

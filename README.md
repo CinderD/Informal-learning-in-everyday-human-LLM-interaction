@@ -37,21 +37,74 @@ Raw public corpora should be obtained from the original providers under their ow
 - LMSYS Chat-1M: https://huggingface.co/datasets/lmsys/lmsys-chat-1m
 - ShareChat: https://huggingface.co/datasets/tucnguyen/ShareChat
 
+## License
+
+The custom code, derived data and source-value artifacts in this repository are
+released under CC0 1.0 Universal (`CC0-1.0`). This licence does not apply to the
+third-party raw conversation corpora, which are not redistributed here and remain
+subject to their original providers' licences and terms.
+
 ## Reproduction Notes
 
-Install the lightweight analysis dependencies with:
+The public release supports two reviewer-facing workflows: integrity checks for
+the released derived data and regeneration of the manuscript figures from the
+released numeric source data. Full re-annotation and model refitting require the
+original public corpora, API credentials and the corpus-scale annotation outputs
+described below.
+
+### System requirements
+
+- Python 3.10 or later.
+- Linux, macOS or Windows; no non-standard hardware or GPU is required for the
+  released verification and figure-generation workflows.
+- Python dependencies listed in `requirements.txt`.
+
+The release was tested on Ubuntu Linux with Python 3.10.12, Matplotlib 3.10.9,
+NumPy 2.2.6 and SciPy 1.15.3. In a clean environment on a standard server CPU,
+creating the virtual environment and installing dependencies took approximately
+31 seconds. Installation time will vary with network and package cache state.
+
+### Installation
+
+Create an isolated environment and install the lightweight analysis dependencies:
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-The camera-ready figure scripts reproduce the manuscript figures and Appendix C visual summaries. The corresponding numeric values are provided in `source_data/`.
+### Verification and demo
+
+Run the release integrity checks:
+
+```bash
+python scripts/verify_release.py --check
+```
+
+Expected output consists of four `PASS` lines covering numeric consistency,
+Figure 2b source data, derived label-table totals and manifest integrity. The
+check took approximately 12 seconds in the tested environment and works from
+both a GitHub clone and an extracted release archive.
+
+The files in `source_data/` form the small reviewer-facing demo dataset. The
+camera-ready scripts regenerate the manuscript figures and Appendix C visual
+summaries from these files:
 
 ```bash
 python scripts/make_camera_ready_figures.py
 python scripts/make_support_intent_form_profile.py
 python scripts/make_wildchat_model_family_robustness.py
 ```
+
+Expected outputs are PDF figures under `figures/` and editable SVG versions
+under `figures_svg_editable/final_figures/`. In the tested environment, the
+three commands took approximately 10.2, 2.5 and 1.8 seconds, respectively.
+
+The corresponding numeric inputs are provided in `source_data/`, and the
+precomputed inferential outputs are provided in `statistical_outputs/`.
+
+### Using other compatible analysis outputs
 
 The label-only analytic tables can be regenerated only on a machine that has access to the corpus-scale annotation outputs described in `tables/table_corpus_provenance_artifacts.tex`. Set `PRODUCTION_OUTPUT_ROOT` to the directory containing those outputs:
 
@@ -61,9 +114,3 @@ python scripts/export_derived_label_tables.py
 ```
 
 Full re-annotation from raw conversations additionally requires user-provided API credentials and access to the original public corpora. Do not commit API keys or raw corpus files to this repository.
-
-Run the release checks with:
-
-```bash
-python scripts/verify_release.py --check
-```
