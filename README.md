@@ -74,7 +74,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-### Verification and demo
+### Verification
 
 Run the release integrity checks:
 
@@ -87,19 +87,31 @@ Figure 2b source data, derived label-table totals and manifest integrity. The
 check took approximately 12 seconds in the tested environment and works from
 both a GitHub clone and an extracted release archive.
 
-The files in `source_data/` form the small reviewer-facing demo dataset. The
-camera-ready scripts regenerate the manuscript figures and Appendix C visual
-summaries from these files:
+### Demo
+
+For a quick reviewer demo, run the following command from the repository root
+on the released numeric inputs in `source_data/`:
 
 ```bash
 python scripts/make_camera_ready_figures.py
+```
+
+Expected output: regenerated PDF manuscript figures in `figures/` and editable
+SVG files in `figures_svg_editable/final_figures/`.
+
+Typical runtime was approximately 10 seconds in the tested environment and
+should generally be under one minute on a standard desktop. Runtime may vary
+across systems.
+
+Additional Appendix C visual summaries can be regenerated with:
+
+```bash
 python scripts/make_support_intent_form_profile.py
 python scripts/make_wildchat_model_family_robustness.py
 ```
 
-Expected outputs are PDF figures under `figures/` and editable SVG versions
-under `figures_svg_editable/final_figures/`. In the tested environment, the
-three commands took approximately 10.2, 2.5 and 1.8 seconds, respectively.
+In the tested environment, these two additional commands took approximately
+2.5 and 1.8 seconds, respectively.
 
 The corresponding numeric inputs are provided in `source_data/`, and the
 precomputed inferential outputs are provided in `statistical_outputs/`.
